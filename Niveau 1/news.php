@@ -112,7 +112,7 @@ if (!$lesInformations) {
                         </div>
                         <footer>
                             <small> ♥ <?php echo $post['like_number'] ?> </small>
-                            <a href=""><?php echo $post['tagsList'] ?></a>,
+                            <a href=""><?php echo $post['taglist'] ?></a>
                         </footer>
                     </article>
                     <?php
