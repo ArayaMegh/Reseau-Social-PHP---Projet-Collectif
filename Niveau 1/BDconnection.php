@@ -4,10 +4,4 @@
          */
         // on va en avoir besoin pour la suite
         $mysqli = new mysqli("localhost", "root", /* modif : */ "", "socialnetwork");
-        //verification
-        if ($mysqli->connect_errno)
-        {
-            echo("Échec de la connexion : " . $mysqli->connect_error);
-            exit();
-        }
         ?>

@@ -1,45 +1,5 @@
-<!doctype html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>ReSoC - Actualités</title> 
-        <meta name="author" content="Julien Falconnet">
-        <link rel="stylesheet" href="style.css"/>
 
-        <?php include("header.php"); ?>
-        
-        <div id="wrapper">
-            <aside>
-                <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
-                <section>
-                    <h3>Présentation</h3>
-                    <p>Sur cette page vous trouverez les derniers messages de
-                        tous les utilisatrices du site.</p>
-                </section>
-            </aside>
-            <main>
-                <!-- L'article qui suit est un exemple pour la présentation et 
-                  @todo: doit etre retiré -->
-                <article>
-                    <h3>
-                        <time datetime='2020-02-01 11:12:13' >31 février 2010 à 11h12</time>
-                    </h3>
-                    <address>par AreTirer</address>
-                    <div>
-                        <p>Ceci est un paragraphe</p>
-                        <p>Ceci est un autre paragraphe</p>
-                        <p>... de toutes manières il faut supprimer cet 
-                            article et le remplacer par des informations en 
-                            provenance de la base de donnée (voir ci-dessous)</p>
-                    </div>                                            
-                    <footer>
-                        <small>♥1012 </small>
-                        <a href="">#lorem</a>,
-                        <a href="">#piscitur</a>,
-                    </footer>
-                </article>               
-
-                <?php
+<?php include("header.php");
                 /*
                   // C'est ici que le travail PHP commence
                   // Votre mission si vous l'acceptez est de chercher dans la base
@@ -103,6 +63,37 @@
                     // 
                     // avec le ? > ci-dessous on sort du mode php et on écrit du html comme on veut... mais en restant dans la boucle
                     ?>
+                    <?php
+                    // avec le <?php ci-dessus on retourne en mode php 
+                }// cette accolade ferme et termine la boucle while ouverte avant.
+                ?>
+
+
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>ReSoC - Actualités</title> 
+        <meta name="author" content="Julien Falconnet">
+        <link rel="stylesheet" href="style.css"/>
+
+        
+        
+        <div id="wrapper">
+            <aside>
+                <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
+                <section>
+                    <h3>Présentation</h3>
+                    <p>Sur cette page vous trouverez les derniers messages de
+                        tous les utilisatrices du site.</p>
+                </section>
+            </aside>
+            <main>
+                <!-- L'article qui suit est un exemple pour la présentation et 
+                  @todo: doit etre retiré -->
+            
+
+                
                     <article>
                         <h3>
                             <time><?php echo $post['created'] ?></time>
@@ -116,10 +107,7 @@
                             <a href="">AREMPLACER</a>,
                         </footer>
                     </article>
-                    <?php
-                    // avec le <?php ci-dessus on retourne en mode php 
-                }// cette accolade ferme et termine la boucle while ouverte avant.
-                ?>
+                    
 
             </main>
         </div>
