@@ -64,8 +64,10 @@
                  * Etape 4: à vous de jouer
                  */
                 //@todo: afficher le résultat de la ligne ci dessous, remplacer les valeurs ci-après puiseffacer la ligne ci-dessous
-                echo "<pre>" . print_r($user, 1) . "</pre>";
-                ?>                
+                // while ($user = $lesInformations->fetch_assoc())
+                // {
+                    echo "<pre>" . print_r($user, 1) . "</pre>";
+                    ?>             
                 <article class='parameters'>
                     <h3>Mes paramètres</h3>
                     <dl>
@@ -80,7 +82,6 @@
                         <dt>Nombre de "J'aime" reçus</dt>
                         <dd>53</dd>
                     </dl>
-
                 </article>
             </main>
         </div>
