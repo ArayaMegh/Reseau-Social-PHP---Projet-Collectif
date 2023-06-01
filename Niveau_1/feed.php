@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-
     <?php include("header.php"); ?>
     
         <div id="wrapper">
@@ -28,7 +27,6 @@
              */
             include("BDconnection.php");
             ?>
-
             <aside>
                 <?php
                 /**
@@ -38,7 +36,7 @@
                 $lesInformations = $mysqli->query($laQuestionEnSql);
                 $user = $lesInformations->fetch_assoc();
                 //@todo: afficher le résultat de la ligne ci dessous, remplacer XXX par l'alias et effacer la ligne ci-dessous
-                /* echo "<pre>" . print_r($user, 1) . "</pre>"; */
+                //echo "<pre>" . print_r($user, 1) . "</pre>";
                 ?>
                 <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
                 <section>
@@ -47,7 +45,6 @@
                         auxquel est abonnée l'utilisatrice <?php echo $user['alias'] ?>
                         (n° <?php echo $userId ?>)
                     </p>
-
                 </section>
             </aside>
             <main>
@@ -75,25 +72,19 @@
                 if ( ! $lesInformations)
                 {
                     echo("Échec de la requete : " . $mysqli->error);
-
                 }
-
                 /**
                  * Etape 4: @todo Parcourir les messsages et remplir correctement le HTML avec les bonnes valeurs php
                  * A vous de retrouver comment faire la boucle while de parcours...
                  */
                 ?>      
                 
-
-
                 <?php
                 while ($post = $lesInformations->fetch_assoc())
                 {
                 include "articles.php";
                 }
                 ?>
-
-
             </main>
         </div>
     </body>
