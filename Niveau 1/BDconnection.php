@@ -4,4 +4,4 @@
          */
         // on va en avoir besoin pour la suite
       /*$mysqli = new mysqli("localhost", "root", "root", "socialnetwork");?>*/
-        $mysqli = new mysqli("localhost", "root", "root", "socialnetwork");?> 
+        $mysqli = new mysqli("localhost", "root", "", "socialnetwork");?> 
