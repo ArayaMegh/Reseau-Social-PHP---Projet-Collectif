@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>ReSoC - Administration</title> 
-        <meta name="author" content="Julien Falconnet">
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-
-    <?php include("header.php"); ?>
-
-        <?php
+<?php include("header.php");
         /**
          * Etape 1: Ouvrir une connexion avec la base de donnée.
          */
@@ -23,7 +11,16 @@
         }
         ?>
 
-        
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>ReSoC - Administration</title> 
+        <meta name="author" content="Julien Falconnet">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+          
         <div id="wrapper" class='admin'>
             <aside>
                 <h2>Mots-clés</h2>
