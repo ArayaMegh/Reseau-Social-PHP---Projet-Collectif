@@ -59,21 +59,7 @@ if (!$lesInformations) {
                 // NB: à chaque tour du while, la variable post ci dessous reçois les informations du post suivant.
                 while ($post = $lesInformations->fetch_assoc())
                 {
-                    ?>
-                    <article>
-                        <h3>
-                            <time><?php echo $post['created'] ?></time>
-                        </h3>
-                        <address><?php echo $post['author_name'] ?></address>
-                        <div>
-                            <p><?php echo $post['content'] ?></p>
-                        </div>
-                        <footer>
-                            <small> ♥ <?php echo $post['like_number'] ?> </small>
-                            <a href=""><?php echo $post['taglist'] ?></a>
-                        </footer>
-                    </article>
-                    <?php
+                include "articles.php";
                 }
                 ?>
 
