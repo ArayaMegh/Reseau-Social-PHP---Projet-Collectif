@@ -87,8 +87,10 @@
 
 
                 <?php
-                require "articles.php";
-                // et de pas oublier de fermer ici vote while
+                while ($post = $lesInformations->fetch_assoc())
+                {
+                include "articles.php";
+                }
                 ?>
 
 
