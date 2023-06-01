@@ -37,12 +37,12 @@
                 $lesInformations = $mysqli->query($laQuestionEnSql);
                 $user = $lesInformations->fetch_assoc();
                 //@todo: afficher le résultat de la ligne ci dessous, remplacer XXX par l'alias et effacer la ligne ci-dessous
-                echo "<pre>" . print_r($user, 1) . "</pre>";
+                /* echo "<pre>" . print_r($user, 1) . "</pre>"; */
                 ?>
                 <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
                 <section>
                     <h3>Présentation</h3>
-                    <p>Sur cette page vous trouverez tous les message de l'utilisatrice : XXX
+                    <p>Sur cette page vous trouverez tous les message de l'utilisatrice : <?php echo $user['alias'] ?>
                         (n° <?php echo $userId ?>)
                     </p>
                 </section>
@@ -76,24 +76,22 @@
                 while ($post = $lesInformations->fetch_assoc())
                 {
 
-                    echo "<pre>" . print_r($post, 1) . "</pre>";
+                    /* echo "<pre>" . print_r($post, 1) . "</pre>"; */
                     ?>                
                     <article>
                         <h3>
-                            <time datetime='2020-02-01 11:12:13' >31 février 2010 à 11h12</time>
+                            <time><?php echo $post['created']?></time>
                         </h3>
-                        <address>par AreTirer</address>
+                        <address><?php echo $post["author_name"]?></address>
                         <div>
-                            <p>Ceci est un paragraphe</p>
-                            <p>Ceci est un autre paragraphe</p>
-                            <p>... de toutes manières il faut supprimer cet 
-                                article et le remplacer par des informations en 
-                                provenance de la base de donnée</p>
+                            <p><?php echo $post["content"]?></p>
+                            <!-- <p></p> -->
+                            <!-- <p></p> -->
                         </div>                                            
                         <footer>
-                            <small>♥ 132</small>
-                            <a href="">#lorem</a>,
-                            <a href="">#piscitur</a>,
+                            <small>♥<?php echo $post["like_number"]?></small>
+                            <a href="tags.php?id=<?php echo $tag["id"]; ?>"><?php echo "#" .$post['taglist']?></a>
+                            <!-- <a href="">#piscitur</a>, -->
                         </footer>
                     </article>
                 <?php } ?>
