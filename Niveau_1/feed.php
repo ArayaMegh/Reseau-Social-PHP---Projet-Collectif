@@ -38,7 +38,7 @@
                 $lesInformations = $mysqli->query($laQuestionEnSql);
                 $user = $lesInformations->fetch_assoc();
                 //@todo: afficher le résultat de la ligne ci dessous, remplacer XXX par l'alias et effacer la ligne ci-dessous
-                echo "<pre>" . print_r($user, 1) . "</pre>";
+                //echo "<pre>" . print_r($user, 1) . "</pre>";
                 ?>
                 <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
                 <section>
@@ -87,12 +87,10 @@
 
 
                 <?php
-                while ($post = $lesInformations->fetch_assoc())
-                {
-                include "articles.php";
-                }
-                ?>
-
+while ($post = $lesInformations->fetch_assoc()) {
+    include “articles.php”;
+}
+?>
 
             </main>
         </div>
