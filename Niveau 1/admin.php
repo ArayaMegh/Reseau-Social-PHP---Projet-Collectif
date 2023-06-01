@@ -46,11 +46,13 @@
                  */
                 while ($tag = $lesInformations->fetch_assoc())
                 {
-                    // echo "<pre>" . print_r($tag, 1) . "</pre>";
-                    // ?>
+               
+                    ?>
                     <article>
                         <h3><?php echo "#" .$tag['label'] ?></h3>
                         <p><?php echo "Identifiant : " .$tag['id'] ?></p>
+                        <h3><?php echo "#" .$tag['label']?></h3>
+                        <p><?php echo $tag['id']?></p>
                         <nav>
                         <a href="tags.php?id=<?php echo $tag['id']; ?>">Messages</a>
                         </nav>
@@ -75,13 +77,16 @@
 
                 /*
                  * Etape 5 : @todo : Afficher les utilisatrices en s'inspirant de ce qui a été fait dans news.php
-                 * Attention à en pas oublier de modifier dans le lien les "user_id=123" avec l'id de l'utilisatrice
+                 * Attention à en pas oublier de modifier dans le lien les "user_id=<?php echo $tag['id']; ?>" avec l'id de l'utilisatrice
                  */
                 while ($tag = $lesInformations->fetch_assoc())
                 {
+           
                     // echo "<pre>" . print_r($tag, 1) . "</pre>";
                     ?>
                     <article>
+                        <h3><?php echo $tag['alias']?></h3>
+                        <p>id:<?php echo $tag['id']?></p>
                         <h3><?php echo $tag['alias'] ?></h3>
                         <p><?php echo "Identifiant : " .$tag['id'] ?></p>
                         <nav>
@@ -89,7 +94,7 @@
                             | <a href="feed.php?user_id=<?php echo $tag['id']; ?>">Flux</a>
                             | <a href="settings.php?user_id=<?php echo $tag['id']; ?>">Paramètres</a>
                             | <a href="followers.php?user_id=<?php echo $tag['id']; ?>">Suiveurs</a>
-                            | <a href="subscriptions.php?user_id=<?php echo $tag['id']; ?>">>Abonnements</a>
+                            | <a href="subscriptions.php?user_id=<?php echo $tag['id']; ?>">Abonnements</a>
                         </nav>
                     </article>
                 <?php } ?>
