@@ -87,7 +87,7 @@
 
 
                 <?php
-                require "articles.php"
+                require "articles.php";
                 // et de pas oublier de fermer ici vote while
                 ?>
 
