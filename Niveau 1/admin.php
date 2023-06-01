@@ -1,5 +1,4 @@
-<?php include("header.php"); ?>
-<?php
+<?php include("header.php");
         /**
          * Etape 1: Ouvrir une connexion avec la base de donnée.
          */
@@ -44,13 +43,12 @@
                  */
                 while ($tag = $lesInformations->fetch_assoc())
                 {
-                    echo "<pre>" . print_r($tag, 1) . "</pre>";
                     ?>
                     <article>
-                        <h3>#chaussette</h3>
-                        <p>id:321</p>
+                        <h3><?php echo "#".$tag['label'] ?></h3>
+                        <p><?php echo $tag['id'] ?></p>
                         <nav>
-                            <a href="tags.php?tag_id=321">Messages</a>
+                            <a href="tags.php?<?php echo $tag['id'] ?>tag_id=321">Messages</a>
                         </nav>
                     </article>
                 <?php } ?>
@@ -77,7 +75,7 @@
                  */
                 while ($tag = $lesInformations->fetch_assoc())
                 {
-                    echo "<pre>" . print_r($tag, 1) . "</pre>";
+                    //echo "<pre>" . print_r($tag, 1) . "</pre>";
                     ?>
                     <article>
                         <h3>Alexandra</h3>
