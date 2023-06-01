@@ -1,3 +1,5 @@
+<?php include("header.php"); ?>
+
 <!doctype html>
 <html lang="fr">
     <head>
@@ -8,7 +10,7 @@
     </head>
     <body>
 
-    <?php include("header.php"); ?>
+    
     
         <div id="wrapper" class='profile'>
 
