@@ -10,7 +10,8 @@
                         </div>                                            
                         <footer>
                             <small>♥<?php echo $post["like_number"]?></small>
-                            <a href="tags.php?id=<?php echo $tag["id"]; ?>"><?php echo "#" .$post['taglist']?></a>
+                            <?php print_r ($post["tagId"]);?> 
+                            <a href="tags.php?id=<?php echo $post["tagId"]; ?>"><?php echo "#" .$post['taglist']?></a>
                             <!-- <a href="">#piscitur</a>, -->
                         </footer>
                     </article>
