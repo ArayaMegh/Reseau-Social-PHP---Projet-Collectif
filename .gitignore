@@ -1,0 +1,2 @@
+# Ignorer le fichier de connexion à la BDD -> différent selon les machines (root)
+Niveau 1/BDconnection.php
