@@ -69,16 +69,13 @@
                 if ( ! $lesInformations)
                 {
                     echo("Échec de la requete : " . $mysqli->error);
-                }
-                echo "coucou";
-                
+                } 
 
                 /**
                  * Etape 4: @todo Parcourir les messsages et remplir correctement le HTML avec les bonnes valeurs php
                  */
                 while ($post = $lesInformations->fetch_assoc())
                 {
-                    echo "coucou";
 
                     //echo "<pre>" . print_r($post, 1) . "</pre>";
 
