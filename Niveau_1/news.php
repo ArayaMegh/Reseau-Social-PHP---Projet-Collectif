@@ -19,6 +19,7 @@ session_start();
                     <h3>Présentation</h3>
                     <p>Sur cette page vous trouverez les derniers messages de
                         tous les utilisatrices du site.</p>
+                        <?php //include("WriteAPost.php");?>
                 </section>
             </aside>
             <main>
@@ -50,7 +51,7 @@ $laQuestionEnSql = "
     LEFT JOIN likes      ON likes.post_id  = posts.id 
     GROUP BY posts.id
     ORDER BY posts.created DESC  
-    LIMIT 5
+    LIMIT 10
 ";
 $lesInformations = $mysqli->query($laQuestionEnSql);
 // Vérification

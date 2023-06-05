@@ -1,30 +1,10 @@
-<?php
-session_start();
-?>
 
-<?php include("header.php"); ?>
-
-<!doctype html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <title>MySafePLace - Post d'usurpateur</title> 
-        <meta name="author" content="Julien Falconnet">
-        <link rel="stylesheet" href="style.css"/>
-    </head>
-    <body>
-
-
-        <div id="wrapper" >
-
-            <aside>
-                <h2>Bienvenue</h2>
-                <p>Sur cette page on peut poster un message en se faisant 
-                    passer pour quelqu'un d'autre</p>
-            </aside>
-            <main>
                 <article>
-                    <h2>Poster un message</h2>
+                    <br>
+                    <hr>
+                    <br>
+
+                    <h3>Poster un message</h3>
                     <?php
                     /**
                      * BD
@@ -85,23 +65,14 @@ session_start();
                         }
                     }
                     ?>                     
-                    <form action="usurpedpost.php" method="post">
-                        <input type='hidden' name='???' value='achanger'>
+                    <form action="wall.php?user_id=<?php echo $_GET['user_id']; ?>" method="post">
+                    <input type='hidden' name='auteur' value='<?php echo $_SESSION["connected_id"]; ?>'>
+
                         <dl>
-                            <dt><label for='auteur'>Auteur</label></dt>
-                            <dd><select name='auteur'>
-                                    <?php
-                                    foreach ($listAuteurs as $id => $alias)
-                                        echo "<option value='$id'>$alias</option>";
-                                    ?>
-                                </select></dd>
                             <dt><label for='message'>Message</label></dt>
                             <dd><textarea name='message'></textarea></dd>
                         </dl>
                         <input type='submit'>
                     </form>               
                 </article>
-            </main>
-        </div>
-    </body>
-</html>
+
