@@ -144,6 +144,11 @@ body>header #user:hover ul {
 } */
 
 
+/* #wrapper {
+    width: 100%;
+    max-width: 80em;
+    margin: 0 auto 2em auto;
+} */
 #wrapper {
     display: flex;
     width: 80em;

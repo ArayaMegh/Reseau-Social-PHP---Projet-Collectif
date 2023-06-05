@@ -2,6 +2,7 @@
 session_start();
 ?>
 <?php include("header.php"); ?>
+
 <!doctype html>
 <html lang="fr">
     <head>
@@ -13,8 +14,6 @@ session_start();
     <body>
 
         <div id="wrapper" >
-        
-
             <aside>
                 <h2>Présentation</h2>
                 <p>Bienvenue sur notre réseau social.</p>
