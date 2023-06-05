@@ -1,6 +1,9 @@
 <?php
 session_start();
 ?>
+
+<?php include("header.php"); ?>
+
 <!doctype html>
 <html lang="fr">
     <head>
@@ -11,7 +14,7 @@ session_start();
     </head>
     <body>
 
-    <?php include("header.php"); ?>
+    
     
         <div id="wrapper">
             <?php
