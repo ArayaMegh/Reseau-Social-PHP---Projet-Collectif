@@ -65,7 +65,7 @@
                         }
                     }
                     ?>                     
-                    <form action="wall.php?user_id=<?php echo $_GET['user_id']; ?>.php" method="post">
+                    <form action="wall.php?user_id=<?php echo $_GET['user_id']; ?>" method="post">
                     <input type='hidden' name='auteur' value='<?php echo $_SESSION["connected_id"]; ?>'>
 
                         <dl>
