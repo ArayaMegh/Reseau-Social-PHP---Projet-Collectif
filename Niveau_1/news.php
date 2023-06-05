@@ -33,6 +33,7 @@
 // Etape 2: Poser une question à la base de donnée et récupérer ses informations
 $laQuestionEnSql = "
     SELECT posts.content,
+    users.id as author_id,
     posts.created,
     users.alias as author_name,  
     count(likes.id) as like_number,  

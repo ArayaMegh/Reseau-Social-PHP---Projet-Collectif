@@ -54,6 +54,7 @@
                  */
                 $laQuestionEnSql = "
                     SELECT posts.content, posts.created, users.alias as author_name, 
+                    users.id as author_id,
                     COUNT(likes.id) as like_number, GROUP_CONCAT(DISTINCT tags.label) AS taglist, GROUP_CONCAT(DISTINCT tags.id) AS tagId
                     FROM posts
                     JOIN users ON  users.id=posts.user_id
@@ -69,18 +70,20 @@
                 {
                     echo("Échec de la requete : " . $mysqli->error);
                 }
+                echo "coucou";
+                
 
                 /**
                  * Etape 4: @todo Parcourir les messsages et remplir correctement le HTML avec les bonnes valeurs php
                  */
                 while ($post = $lesInformations->fetch_assoc())
                 {
+                    echo "coucou";
 
-                    /* echo "<pre>" . print_r($post, 1) . "</pre>"; */
-                    while ($post = $lesInformations->fetch_assoc())
-                    {
+                    //echo "<pre>" . print_r($post, 1) . "</pre>";
+
                     include "articles.php";
-                    }
+
 } ?>
 
 
