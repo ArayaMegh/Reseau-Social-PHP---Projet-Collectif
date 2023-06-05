@@ -11,7 +11,7 @@ session_start();
     </head>
     <body>
         <header>
-            <img src="resoc.jpg" alt="Logo de notre réseau social"/>
+            <img src="PROGRESS-PRIDE-FLAG.png" alt="Logo de notre réseau social"/>
             <nav id="menu">
                 <a href="news.php">Actualités</a>
                 <a href="wall.php?user_id=5">Mur</a>
@@ -33,7 +33,7 @@ session_start();
 
             <aside>
                 <h2>Présentation</h2>
-                <p>Bienvenu sur notre réseau social.</p>
+                <p>Bienvenue sur notre réseau social.</p>
             </aside>
             <main>
                 <article>
