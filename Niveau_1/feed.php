@@ -2,6 +2,8 @@
 session_start();
 ?>
 
+<?php include("header.php"); ?>
+
 <!doctype html>
 <html lang="fr">
     <head>
@@ -11,7 +13,7 @@ session_start();
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-    <?php include("header.php"); ?>
+    
     
         <div id="wrapper">
             <?php
@@ -46,9 +48,8 @@ session_start();
                 <!-- <img src="user.jpg" alt="Portrait de l'utilisatrice"/> -->
                 <section>
                     <h3>Présentation</h3>
-                    <p>Sur cette page vous trouverez tous les messages des utilisatrices
-                        auxquel est abonnée l'utilisatrice <?php echo $user['alias'] ?>
-                        (n° <?php echo $userId ?>)
+                    <p>Hello <?php echo $user['alias'] ?>
+                        (n° <?php echo $userId ?>), ici tu peux retrouver tous les messages des adelphes que tu follow
                     </p>
                 </section>
             </aside>

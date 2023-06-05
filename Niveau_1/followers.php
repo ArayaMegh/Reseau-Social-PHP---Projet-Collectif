@@ -2,6 +2,8 @@
 session_start();
 ?>
 
+<?php include("header.php"); ?>
+
 <!doctype html>
 <html lang="fr">
     <head>
