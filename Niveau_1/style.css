@@ -12,6 +12,52 @@ a:hover {
     text-decoration: underline;
 }
 
+.background {
+    /* Center the content */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Background */
+    background: url('background.png') center center / cover no-repeat;
+}
+
+.mega-menu {
+    /* Used to position the mega menu */
+    position: relative;
+}
+
+.mega-menu__trigger:hover .mega-menu__content {
+    /* Show the mega menu when hovering the trigger item */
+    display: block;
+}
+
+.mega-menu__content {
+    /* Border */
+    border: 1px solid #d1d5db;
+    margin-top: -1px;
+
+    /* Hidden by default */
+    display: none;
+
+    /* Absolute position */
+    left: 0px;
+    position: absolute;
+    top: 100%;
+
+    /* Take full width */
+    width: 100%;
+
+    /* Displayed on top of other elements */
+    background: #fff;
+    z-index: 9999;
+}
+
 body>header {
     background-color: #ffffff;
     display: flex;
@@ -22,10 +68,10 @@ body>header {
 
 }
 
-body>header img {
+/* body>header img {
     height: 5em;
     border-radius: 10px;
-}
+} */
 
 body>header #menu {
     display: flex;
