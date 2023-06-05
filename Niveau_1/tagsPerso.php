@@ -46,8 +46,7 @@ session_start();
                 <!-- <img src="user.jpg" alt="Portrait de l'utilisatrice"/> -->
                 <section>
                     <h3>Présentation</h3>
-                    <p>Sur cette page vous trouverez les derniers messages comportant
-                        le mot-clé <?php echo $tag["label"] ?>
+                    <p>Sur cette page, on est pa suûres encore de ce que vous allez trouver. Peut-être un moteur de rechrche de mots ? <?php echo $tag["label"] ?>
                         (n° <?php echo $tag["id"] ?>)
                     </p>
 
