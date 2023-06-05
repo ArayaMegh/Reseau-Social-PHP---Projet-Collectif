@@ -5,7 +5,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(181, 9, 194);
 }
 
 a:hover {
@@ -132,11 +132,12 @@ body>header #user:hover ul {
 }
 
 #wrapper main article time {
-    float: left;
+    float: right;
 }
 
 #wrapper main article address {
-    text-align: right;
+    text-align: left;
+    font-weight: bolder;
     margin-bottom: 1em;
 }
 
