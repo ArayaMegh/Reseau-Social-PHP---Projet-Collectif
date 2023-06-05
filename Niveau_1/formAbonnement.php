@@ -17,4 +17,12 @@ $SqFollow = "INSERT INTO followers "
     ;";
 
     $SqlFollowResult = $mysqli -> query($SqFollow);
+
+    if ( ! $SqlFollowResult)
+        {
+        echo "oups, impossible de s'abonner";
+        } else
+        {
+        echo "follow actif !";
+        }
     ?>
