@@ -34,7 +34,7 @@ session_start();
                     echo "</article>";
                     exit();
                 }
-// On affiche les 5 derniers pots
+// On affiche les 5 derniers posts
 // Etape 2: Poser une question à la base de donnée et récupérer ses informations
 $laQuestionEnSql = "
     SELECT posts.content,
