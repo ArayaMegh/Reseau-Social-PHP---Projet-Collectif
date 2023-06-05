@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <?php include("header.php");
         /**
          * Etape 1: Ouvrir une connexion avec la base de donnée.
@@ -15,7 +19,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>ReSoC - Administration</title> 
+        <title>MySafePlace - Administration</title> 
         <meta name="author" content="Julien Falconnet">
         <link rel="stylesheet" href="style.css"/>
     </head>
