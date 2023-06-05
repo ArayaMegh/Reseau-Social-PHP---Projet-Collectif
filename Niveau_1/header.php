@@ -14,20 +14,21 @@
                 <a href="feed.php?user_id=<?php echo $_SESSION['connected_id']; ?>">MySafeCommu</a>
             </div>
             <div class="mega-menu__item">
-                <a href="tagsPerso.php?tag_id=1">MySafe#</a>
-            </div>
-        </nav>
-        <nav class="mega-menu">
-            <div class="mega-menu__item mega-menu__trigger">
-                <a href="#">Profil</a>
+                <a href="tagsPerso.php?tag_id==<?php echo $_SESSION['connected_id']; ?>">MySafe#</a>
             </div>
             <div class="mega-menu__item mega-menu__trigger">
-                <a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Paramètres</a>
-                <ul>
-                    <li><a href="followers.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Abonnements</a></li>
-                    <li><a href="subscriptions.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Followers</a></li>
-                </ul>
+                 <div>
+                    <a href="#">Profil</a>
+                </div>
+                
+                    <div class="mega-menu__content">
+                        <a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Paramètres</a>
+                        <a href="followers.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Followers</a>
+                        <a href="subscriptions.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Abonnements</a>
+                    </div>
+            </div>
             </div>
         </nav>
     </div>
 </header>
+

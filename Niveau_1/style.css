@@ -13,28 +13,39 @@ a:hover {
 }
 
 .background {
-    /* Center the content */
-    align-items: center;
+    margin-bottom: 15px;
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    /* Take full size */
+    justify-content: flex-end;
     height: 100%;
     width: 100%;
-
-    /* Background */
-    background: url('background.png') center center / cover no-repeat;
+    background: url(background.png) center center / cover no-repeat;
 }
 
 .mega-menu {
-    /* Used to position the mega menu */
-    position: relative;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    bottom: 30px;
+    right: 45px;
 }
 
 .mega-menu__trigger:hover .mega-menu__content {
     /* Show the mega menu when hovering the trigger item */
     display: block;
+    flex-grow: 1;
+    text-align: right;
+}
+
+.mega-menu__item {
+    margin-left: 10px;
+    background-color: rgba(255, 255, 255, 0.46);
+    border-radius: 30px;
+    padding: 15px;
+
 }
 
 .mega-menu__content {
@@ -58,7 +69,7 @@ a:hover {
     z-index: 9999;
 }
 
-body>header {
+/* body>header {
     background-color: #ffffff;
     display: flex;
     width: 80em;
@@ -66,14 +77,14 @@ body>header {
     padding: 0;
     border-radius: 10px;
 
-}
+} */
 
 /* body>header img {
     height: 5em;
     border-radius: 10px;
 } */
 
-body>header #menu {
+/* body>header #menu {
     display: flex;
     width: 50%;
     align-items: stretch;
@@ -130,7 +141,7 @@ body>header #user ul li a {
 
 body>header #user:hover ul {
     display: block;
-}
+} */
 
 
 #wrapper {
