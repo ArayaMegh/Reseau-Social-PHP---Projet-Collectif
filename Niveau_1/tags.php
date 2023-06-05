@@ -20,7 +20,7 @@ session_start();
              * mais elle porte sur les mots-clés (tags)
              */
             /**
-             * Etape 1: Le mur concerne un mot-clé en particulier
+             * Etape 1: Le mur concerne les tags sléctionné par l'utilisateur
              */
             $tagId = intval($_GET['id']);
             ?>
@@ -60,6 +60,7 @@ session_start();
                  */
                 $laQuestionEnSql = "
                     SELECT posts.content,
+                    users.id as author_id,
                     posts.created,
                     users.alias as author_name,  
                     count(likes.id) as like_number,  

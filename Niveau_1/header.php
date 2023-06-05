@@ -4,7 +4,7 @@
             <a href="news.php">MySafeNews</a>
             <a href="wall.php?user_id=<?php echo $_SESSION['connected_id']; ?>">MySafePlace</a>
             <a href="feed.php?user_id=<?php echo $_SESSION['connected_id']; ?>">MySafeCommu</a>
-            <a href="tags.php?tag_id=1">MySafe#</a>
+            <a href="tagsPerso.php?tag_id=1">MySafe#</a>
         </nav>
         <nav id="user">
             <a href="#">Profil</a>

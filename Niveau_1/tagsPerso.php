@@ -22,14 +22,14 @@ session_start();
             /**
              * Etape 1: Le mur concerne un mot-clé en particulier
              */
-            $tagId = intval($_GET['id']);
+            $tagId = intval($_GET['tag_id']);
             ?>
             <?php
             /**
              * Etape 2: se connecter à la base de donnée
              */
             include("BDconnection.php");
-            ?>
+            ?>s
 
             <aside>
                 <?php
