@@ -8,7 +8,7 @@ session_start();
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>ReSoC - Post d'usurpateur</title> 
+        <title>MySafePLace - Post d'usurpateur</title> 
         <meta name="author" content="Julien Falconnet">
         <link rel="stylesheet" href="style.css"/>
     </head>

@@ -4,7 +4,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>ReSoC - Paramètres</title> 
+        <title>MySafePLace - Paramètres</title> 
         <meta name="author" content="Julien Falconnet">
         <link rel="stylesheet" href="style.css"/>
     </head>

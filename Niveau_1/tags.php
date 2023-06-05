@@ -1,8 +1,11 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="fr">
     <head>
         <meta charset="utf-8">
-        <title>ReSoC - Les message par mot-clé</title> 
+        <title>MySafePLace - Les message par mot-clé</title> 
         <meta name="author" content="Julien Falconnet">
         <link rel="stylesheet" href="style.css"/>
     </head>
@@ -37,7 +40,7 @@
                 $lesInformations = $mysqli->query($laQuestionEnSql);
                 $tag = $lesInformations->fetch_assoc();
                 //@todo: afficher le résultat de la ligne ci dessous, remplacer XXX par le label et effacer la ligne ci-dessous
-                //echo "<pre>" . print_r($tag, 1) . "</pre>";
+                echo "<pre>" . print_r($tag, 1) . "</pre>";
                 ?>
                 <div class="initial-avatar">...</div>
                 <!-- <img src="user.jpg" alt="Portrait de l'utilisatrice"/> -->
