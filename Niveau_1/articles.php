@@ -2,8 +2,8 @@
                         <h3>
                             <time><?php echo $post['created']?></time>
                         </h3>
-                        <address><a href="wall.php?user_id=<?php echo $post["users.id"]; ?>"><?php echo $post["author_name"]?></a></address>
-                        <?php echo "<pre>" . print_r($post, 1) . "</pre>";?>
+                        <address><a href="wall.php?user_id=<?php echo $post["author_id"]; ?>"><?php echo $post["author_name"]?></a></address>
+                        <?php #echo "<pre>" . print_r($post, 1) . "</pre>";?>
                         
                         <div>
                             <p><?php echo $post["content"]?></p>
