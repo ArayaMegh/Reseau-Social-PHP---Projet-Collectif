@@ -20,16 +20,16 @@ session_start();
              * mais elle porte sur les mots-clés (tags)
              */
             /**
-             * Etape 1: Le mur concerne les tags sléctionné par l'utilisateur
+             * Etape 1: Le mur concerne un mot-clé en particulier
              */
-            $tagId = intval($_GET['id']);
+            $tagId = intval($_GET['tag_id']);
             ?>
             <?php
             /**
              * Etape 2: se connecter à la base de donnée
              */
             include("BDconnection.php");
-            ?>
+            ?>s
 
             <aside>
                 <?php
@@ -60,7 +60,6 @@ session_start();
                  */
                 $laQuestionEnSql = "
                     SELECT posts.content,
-                    users.id as author_id,
                     posts.created,
                     users.alias as author_name,  
                     count(likes.id) as like_number,  
