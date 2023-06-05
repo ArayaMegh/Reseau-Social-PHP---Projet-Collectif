@@ -12,7 +12,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.background {
+.background-full {
     margin-bottom: 15px;
     align-items: flex-end;
     display: flex;
@@ -23,14 +23,23 @@ a:hover {
     background: url(background.png) center center / cover no-repeat;
 }
 
+.background {
+    margin-bottom: 15px;
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 245px;
+    width: 1286px;
+    background: url(backgroundAlt.png);
+}
+
 .mega-menu {
-    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
-    bottom: 30px;
-    right: 45px;
+    padding-bottom: 15px;
 }
 
 .mega-menu__trigger:hover .mega-menu__content {

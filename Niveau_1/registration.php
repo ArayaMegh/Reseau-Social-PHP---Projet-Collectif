@@ -2,7 +2,7 @@
 session_start();
 ?>
 
-<?php include("header.php"); ?>
+<?php include("headerFull.php"); ?>
 
 <!doctype html>
 <html lang="fr">
@@ -17,9 +17,9 @@ session_start();
 
         <div id="wrapper" >
 
-            <aside>
-                <h2>Présentation</h2>
-                <p>Bienvenue sur notre réseau social.</p>
+        <aside>
+                <h2>Hello ! 👋 </h2>
+                <p>Bienvenue sur My Safe Place, ton réseau social bienveillant et inclusif.</p>
             </aside>
             <main>
                 <article>
@@ -67,7 +67,7 @@ session_start();
                             echo "L'inscription a échouée : " . $mysqli->error;
                         } else
                         {
-                            echo "Votre inscription est un succès : " . $new_alias;
+                            echo "Votre inscription est un succès. Bienvenue " . $new_alias . " !";
                             echo " <a href='login.php'>Connectez-vous.</a>";
                         }
                     }
@@ -82,7 +82,7 @@ session_start();
                             <dt><label for='motpasse'>Mot de passe</label></dt>
                             <dd><input type='password'name='motpasse'></dd>
                         </dl>
-                        <input type='submit'>
+                        <input type='submit' value="Envoyer" />
                     </form>
                 </article>
             </main>
