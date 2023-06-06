@@ -1,5 +1,7 @@
 
 <header>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <div class="background">
         <nav class="mega-menu">
             <div class="mega-menu__item">
