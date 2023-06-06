@@ -1,13 +1,3 @@
-<?php
-session_start();
-// Vérifie si l'utilisateur n'est pas connecté (par exemple, en vérifiant la présence d'une variable de session)
-if (!isset($_SESSION['connected_id'])) {
-    header("Location: login.php"); // Redirige vers la page de connexion
-    exit(); // Arrête l'exécution du reste du code
-}
-
-?>
-
 <?php include("header.php"); ?>
 
 <!doctype html>
