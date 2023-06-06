@@ -51,9 +51,16 @@ a:hover {
 
 .mega-menu__trigger:hover .mega-menu__content {
     /* Show the mega menu when hovering the trigger item */
-    display: block;
-    flex-grow: 1;
-    text-align: right;
+    display: flex;
+    /* Modifier "block" en "flex" */
+    flex-direction: column;
+    /* Ajouter cette ligne */
+    align-items: flex-end;
+    /* Ajouter cette ligne */
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 9999;
 }
 
 .mega-menu__item {
