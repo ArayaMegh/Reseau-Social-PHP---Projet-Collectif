@@ -21,6 +21,9 @@ session_start();
                 <article>
                     <h2>Connexion</h2>
                     <?php
+                    
+                    // Par exemple, supprimer la variable de session de l'utilisateur
+                    unset($_SESSION['connected_id']);
                     /**
                      * TRAITEMENT DU FORMULAIRE
                      */
@@ -67,13 +70,10 @@ session_start();
                             // Etape 7 : Se souvenir que l'utilisateur s'est connecté pour la suite
                             // documentation: https://www.php.net/manual/fr/session.examples.basic.php
                             $_SESSION['connected_id']=$user['id'];
-                            $user_id = $user['id']; 
-                            // Échapper la valeur de user_id pour éviter les problèmes de sécurité
-                            $escaped_user_id = urlencode($user_id);
-                            // Effectuer la redirection
-                            //header("Location: wall.php?user_id=$escaped_user_id");
+                            // Redirection vers news page
                             header("Location: news.php");
-                            exit();
+                            exit; // exit après la redirection pour éviter que le reste du code ne soit exécuté.
+
                         }
                     }
 
