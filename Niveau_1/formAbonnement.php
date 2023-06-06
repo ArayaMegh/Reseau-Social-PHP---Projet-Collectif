@@ -23,7 +23,7 @@ $SqFollow = "INSERT INTO followers "
         echo "oups, impossible de s'abonner";
         } else
         {
-        echo "follow actif !";
+        //echo "follow actif !";
         }
 }
     ?>
