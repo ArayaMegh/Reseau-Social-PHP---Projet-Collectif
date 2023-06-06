@@ -1,8 +1,7 @@
 <?php
 session_start();
 ?>
-<?php include("header.php"); ?>
-
+<?php include("headerFull.php"); ?>
 <!doctype html>
 <html lang="fr">
     <head>
@@ -15,8 +14,8 @@ session_start();
 
         <div id="wrapper" >
             <aside>
-                <h2>Présentation</h2>
-                <p>Bienvenue sur notre réseau social.</p>
+                <h2>Hello ! 👋 </h2>
+                <p>Bienvenue sur My Safe Place, ton réseau social bienveillant et inclusif.</p>
             </aside>
             <main>
                 <article>
@@ -68,8 +67,16 @@ session_start();
                             // Etape 7 : Se souvenir que l'utilisateur s'est connecté pour la suite
                             // documentation: https://www.php.net/manual/fr/session.examples.basic.php
                             $_SESSION['connected_id']=$user['id'];
+                            $user_id = $user['id']; 
+                            // Échapper la valeur de user_id pour éviter les problèmes de sécurité
+                            $escaped_user_id = urlencode($user_id);
+                            // Effectuer la redirection
+                            //header("Location: wall.php?user_id=$escaped_user_id");
+                            header("Location: news.php");
+                            exit();
                         }
                     }
+
                     ?>                     
                     <form action="login.php" method="post">
                         <input type='hidden'name='???' value='achanger'>
@@ -79,7 +86,7 @@ session_start();
                             <dt><label for='motpasse'>Mot de passe</label></dt>
                             <dd><input type='password'name='motpasse'></dd>
                         </dl>
-                        <input type='submit'>
+                        <input type='submit' value="Envoyer" />
                     </form>
                     <p>
                         Pas de compte?
