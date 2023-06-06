@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<?php include("header.php"); ?>
+<?php include("headerFull.php"); ?>
 <!doctype html>
 <html lang="fr">
 
