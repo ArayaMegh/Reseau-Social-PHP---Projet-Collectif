@@ -13,8 +13,7 @@ session_start();
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-
-    
+    <?php include("header.php"); ?>
     
         <div id="wrapper">
             <?php
@@ -33,7 +32,6 @@ session_start();
              */
             include("BDconnection.php");
             ?>
-
             <aside>
                 <?php
                 /**
@@ -53,7 +51,6 @@ session_start();
                         le mot-clé <?php echo $tag["label"] ?>
                         (n° <?php echo $tag["id"] ?>)
                     </p>
-
                 </section>
             </aside>
             <main>
@@ -83,7 +80,6 @@ session_start();
                 {
                     echo("Échec de la requete : " . $mysqli->error);
                 }
-
                 /**
                  * Etape 4: @todo Parcourir les messsages et remplir correctement le HTML avec les bonnes valeurs php
                  */
@@ -100,3 +96,23 @@ session_start();
         </div>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
