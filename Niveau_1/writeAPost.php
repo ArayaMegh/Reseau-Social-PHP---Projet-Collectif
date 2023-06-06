@@ -11,7 +11,7 @@
                      */
                     include("BDconnection.php");
                     /**
-                     * Récupération de la liste des auteurs
+                     * Récupération de la liste des tags
                      */
                     $listTags = [];
                     $laQuestionEnSql = "SELECT * FROM tags";

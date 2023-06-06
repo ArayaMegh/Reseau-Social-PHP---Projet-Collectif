@@ -13,7 +13,7 @@
                 <a href="feed.php?user_id=<?php echo $_SESSION['connected_id']; ?>">MySafeCommu</a>
             </div>
             <div class="mega-menu__item">
-                <a href="tagsPerso.php?tag_id==<?php echo $_SESSION['connected_id']; ?>">MySafe#</a>
+                <a href="tagsPerso.php">MySafe#</a>
             </div>
             
             <div class="mega-menu__item mega-menu__trigger">
