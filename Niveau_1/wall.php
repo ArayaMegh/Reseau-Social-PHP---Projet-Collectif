@@ -51,12 +51,28 @@ session_start();
                     <p>Sur cette page vous trouverez tous les messages de l'utilisatrice : <?php echo $user['alias'] ?>
                         (n° <?php echo $userId ?>)
                     </p>
-                    <?php if ($userId == $_SESSION['connected_id']) {
-                include("WriteAPost.php");
-                } else {
-                    include("formAbonnement.php")
-                ;}?>
                 
+                <?php if ($userId == $_SESSION['connected_id']) {
+                include("WriteAPost.php"); 
+                }else{
+
+                    $IsSubscribedQuery = "SELECT * FROM followers WHERE followed_user_id = " 
+                    . $userId
+                    . " AND following_user_id = " 
+                    . $_SESSION['connected_id'] . ";";
+
+                    $isSubscribedResult = $mysqli -> query($IsSubscribedQuery);
+
+                    if ($isSubscribedResult->num_rows > 0){
+
+                        // Afficher le formulaire de désabonnement
+                        include("formDesabonnement.php");
+                    } else {
+                    // Afficher le formulaire d'abonnement
+                        include("formAbonnement.php");
+                    }
+                }
+                ?>
 
                 </section>
             </aside>
