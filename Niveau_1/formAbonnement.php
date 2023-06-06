@@ -21,9 +21,8 @@ $SqFollow = "INSERT INTO followers "
     if ( ! $SqlFollowResult)
         {
         echo "oups, impossible de s'abonner";
-        } else
-        {
-        //echo "follow actif !";
+        } else{
+            header("Refresh:0");;
         }
 }
     ?>
