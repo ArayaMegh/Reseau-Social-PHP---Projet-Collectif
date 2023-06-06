@@ -3,11 +3,11 @@
 <br>
 
 <form action="wall.php?user_id=<?php echo $userId; ?>" method="post">
-<input type="submit" value="S'abonner">
+<input type="submit" name = 'subscribe' value="S'abonner">
 </form>
 
 <?php 
-
+if (isset($_POST['subscribe'])) {
 //Etape 4 : construction de la requete
 $SqFollow = "INSERT INTO followers "
     . "(id, followed_user_id, following_user_id) "
@@ -25,4 +25,5 @@ $SqFollow = "INSERT INTO followers "
         {
         //echo "follow actif !";
         }
+}
     ?>
