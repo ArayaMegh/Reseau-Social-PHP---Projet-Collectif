@@ -1,5 +1,5 @@
 <br>
-<br>
+<hr>
 <br>
 
 <form action="wall.php?user_id=<?php echo $userId; ?>" method="post">
@@ -10,6 +10,8 @@
 
 // Etape 1 : Vérifier si l'utilisateur a cliqué sur le bouton de désabonnement
 if (isset($_POST['unsubscribe'])) {
+    
+
     // Etape 2 : Récupérer l'ID de l'utilisateur à désabonner
     $userIdToUnfollow = $_POST['user_id'];
 
@@ -25,7 +27,7 @@ if (isset($_POST['unsubscribe'])) {
     if (!$unfollowResult) {
         echo "Oups, impossible de se désabonner.";
     } else {
-        echo "Désabonnement effectué avec succès !";
+        header("Refresh:0");
     }
 }
 ?>
