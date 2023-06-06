@@ -18,8 +18,7 @@ session_start();
                 <section>
                     <h3>Présentation</h3>
                     <p>Sur cette page vous trouverez les derniers messages de
-                        tous les utilisatrices du site.</p>
-                        <?php //include("WriteAPost.php");?>
+                        toutes les utilisatrices du site.</p>
                 </section>
             </aside>
             <main>
@@ -35,7 +34,7 @@ session_start();
                     echo "</article>";
                     exit();
                 }
-// On affiche les 5 derniers pots
+// On affiche les 5 derniers posts
 // Etape 2: Poser une question à la base de donnée et récupérer ses informations
 $laQuestionEnSql = "
     SELECT posts.content,
