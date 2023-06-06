@@ -1,38 +1,3 @@
-<<<<<<< HEAD
-<div class="background">
-    <div class="mega-menu">
-        <div class="mega-menu__item">
-            <a href="news.php">MySafeNews</a>
-        </div>
-        
-        <div class="mega-menu__item">
-            <a href="wall.php?user_id=<?php echo $_SESSION['connected_id']; ?>">MySafePlace</a>
-        </div>
-        
-        <div class="mega-menu__item">
-            <a href="feed.php?user_id=<?php echo $_SESSION['connected_id']; ?>">MySafeCommu</a>
-        </div>
-        
-        <div class="mega-menu__item">
-            <a href="tagsPerso.php?tag_id=<?php echo $_SESSION['connected_id']; ?>">MySafe#</a>
-        </div>
-
-        <div class="mega-menu__item mega-menu__trigger">
-            <div>Paramètres ⬇️</div>
-            
-            <div class="mega-menu__content">
-                <a href="wall.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Mon profil</a>
-                <a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Paramètres</a>
-                <a href="followers.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Followers</a>
-                <a href="subscriptions.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Abonnements</a>
-                <a href="login.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Déconnexion</a>
-            </div>
-        </div>
-        
-    </div>
-</div>
-
-=======
 <header>
     <div class="background">
         <nav class="mega-menu">
@@ -50,41 +15,23 @@
                     <a href="feed.php?user_id=<?php echo $_SESSION['connected_id']; ?>">MySafeCommu</a>
                 </div>
                 <div class="mega-menu__item">
-                    <a href="tagsPerso.php?tag_id==<?php echo $_SESSION['connected_id']; ?>">MySafe#</a>
+                    <a href="tagsPerso.php?tag_id=<?php echo $_SESSION['connected_id']; ?>">MySafe#</a>
                 </div>
             <?php endif; ?>
 
-
-
             <div class="mega-menu__item mega-menu__trigger">
-                <div>
-                    <a href="#">Profil</a>
+                <div><a href="#"> Paramètres ⬇️ </a></div>
+                
+                <div class="mega-menu__content">
+                    <!-- <a href="wall.php?user_id=">Mon profil</a> -->
+                    <a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Paramètres</a>
+                    <a href="followers.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Followers</a>
+                    <a href="subscriptions.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Abonnements</a>
+                    <a href="login.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Déconnexion</a>
                 </div>
-                <?php if (isset($_SESSION['connected_id'])) : ?>
-                    <ul>
-                        <li>
-                            <a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Paramètres</a>
-                        </li>
-                        <li>
-                            <a href="followers.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Followers</a>
-                        </li>
-                        <li>
-                            <a href="subscriptions.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Abonnements</a>
-                        </li>
-                        <li>
-                            <a href="logout.php">Déconnexion</a>
-                        </li>
-                    </ul>
-                    <div class="mega-menu__content">
-                        <a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Paramètres</a>
-                        <a href="followers.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Followers</a>
-                        <a href="subscriptions.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Abonnements</a>
-                        <a href="logout.php">Déconnexion</a>
-                    </div>
-                <?php endif; ?>
             </div>
-    </div>
-    </nav>
+        </nav>
     </div>
 </header>
->>>>>>> 40242e1003db9a4bbc4d5fc250f3206af21c492e
+
+

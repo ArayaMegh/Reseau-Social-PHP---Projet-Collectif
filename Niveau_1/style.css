@@ -256,9 +256,9 @@ body>header #user:hover ul {
     margin: 0;
 }
 
-#wrapper.admin nav {
+/* #wrapper.admin nav {
     text-align: right;
-}
+} */
 
 #wrapper.admin article {
     border: 1px solid #ddd;
