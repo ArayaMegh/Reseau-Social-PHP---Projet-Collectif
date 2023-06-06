@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<?php include("header.php"); ?>
+<?php include("headerFull.php"); ?>
 <!doctype html>
 <html lang="fr">
     <head>
@@ -16,8 +16,8 @@ session_start();
         
 
             <aside>
-                <h2>Présentation</h2>
-                <p>Bienvenue sur notre réseau social.</p>
+                <h2>Hello ! 👋 </h2>
+                <p>Bienvenue sur My Safe Place, ton réseau social bienveillant et inclusif.</p>
             </aside>
             <main>
                 <article>
@@ -80,7 +80,7 @@ session_start();
                             <dt><label for='motpasse'>Mot de passe</label></dt>
                             <dd><input type='password'name='motpasse'></dd>
                         </dl>
-                        <input type='submit'>
+                        <input type='submit' value="Envoyer" />
                     </form>
                     <p>
                         Pas de compte?
