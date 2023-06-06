@@ -13,8 +13,7 @@ session_start();
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
-
-    
+    <?php include("header.php"); ?>
     
         <div id="wrapper">
             <?php
@@ -33,7 +32,6 @@ session_start();
              */
             include("BDconnection.php");
             ?>
-
             <aside>
                 <?php
                 /**
@@ -44,17 +42,15 @@ session_start();
                 $tag = $lesInformations->fetch_assoc();
                 //@todo: afficher le résultat de la ligne ci dessous, remplacer XXX par le label et effacer la ligne ci-dessous
                 //echo "<pre>" . print_r($tag, 1) . "</pre>";
-                
                 ?>
                 <div class="initial-avatar">...</div>
                 <!-- <img src="user.jpg" alt="Portrait de l'utilisatrice"/> -->
                 <section>
                     <h3>Présentation</h3>
                     <p>Sur cette page vous trouverez les derniers messages comportant
-                        le mot-clé  <?php echo $tag['label'] ?>
-                        (n° <?php echo $tag['id'] ?>)
+                        le mot-clé <?php echo $tag["label"] ?>
+                        (n° <?php echo $tag["id"] ?>)
                     </p>
-
                 </section>
             </aside>
             <main>
@@ -84,17 +80,39 @@ session_start();
                 {
                     echo("Échec de la requete : " . $mysqli->error);
                 }
-
                 /**
                  * Etape 4: @todo Parcourir les messsages et remplir correctement le HTML avec les bonnes valeurs php
                  */
-                while ($post = $lesInformations->fetch_assoc())
-               {
-                include "articles.php";
-                }
-                ?>
-
+                // echo "<pre>" . print_r($post, 1) . "</pre>";
+                //while ($post = $lesInformations->fetch_assoc())
+    
+                        /* echo "<pre>" . print_r($post, 1) . "</pre>"; */
+                        while ($post = $lesInformations->fetch_assoc())
+                        {
+                        include "articles.php";
+                        } ?>
+    
             </main>
         </div>
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
