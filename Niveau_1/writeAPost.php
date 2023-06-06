@@ -13,12 +13,12 @@
                     /**
                      * Récupération de la liste des auteurs
                      */
-                    $listAuteurs = [];
-                    $laQuestionEnSql = "SELECT * FROM users";
+                    $listTags = [];
+                    $laQuestionEnSql = "SELECT * FROM tags";
                     $lesInformations = $mysqli->query($laQuestionEnSql);
-                    while ($user = $lesInformations->fetch_assoc())
+                    while ($tags = $lesInformations->fetch_assoc())
                     {
-                        $listAuteurs[$user['id']] = $user['alias'];
+                        $listTags[$tags['id']] = $tags['label'];
                     }
 
 
@@ -37,6 +37,7 @@
                         // et complétez le code ci dessous en remplaçant les ???
                         $authorId = $_POST['auteur'];
                         $postContent = $_POST['message'];
+                        $post_tags = $_POST['tags'];
 
 
                         //Etape 3 : Petite sécurité
@@ -61,7 +62,7 @@
                             echo "Impossible d'ajouter le message: " . $mysqli->error;
                         } else
                         {
-                            echo "Message posté en tant que :" . $listAuteurs[$authorId];
+                            echo "Message posté";//" en tant que :" . $listAuteurs[$authorId];
                         }
                     }
                     ?>                     
@@ -71,6 +72,14 @@
                         <dl>
                             <dt><label for='message'>Message</label></dt>
                             <dd><textarea name='message'></textarea></dd>
+                            <dt><label for='tags'>Les mots clés # : </label></dt>
+                            <dd><select name="tags">
+                                <?php
+                                foreach ( $listTags as $id => $label)
+                                    echo "<option value='$id'>$label</option>";
+                                ?>
+                            </select></dd>
+                            
                         </dl>
                         <input type='submit'>
                     </form>               
