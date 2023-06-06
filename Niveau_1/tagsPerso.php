@@ -108,7 +108,7 @@ session_start();
 
                     //echo "<pre>" . print_r($post, 1) . "</pre>";
 
-                    include "articles.php";
+                    //include "articles.php";
 
 } ?>
 
