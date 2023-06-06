@@ -3,8 +3,12 @@
 
 body {
     background-color: rgb(99, 2, 106);
+    /* background-image: url('background.png'); */
+    background-size: contain;
+    background-repeat: no-repeat;
     font-family: Arial;
 }
+
 
 a {
     text-decoration: none;

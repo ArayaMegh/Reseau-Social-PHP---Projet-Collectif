@@ -1,4 +1,4 @@
-<?php include("header.php"); ?>
+<?php include("headerFull.php"); ?>
 
 <!doctype html>
 <html lang="fr">
@@ -18,6 +18,7 @@
         <aside>
             <h2>Hello ! 👋 </h2>
             <p>Bienvenue sur My Safe Place, ton réseau social bienveillant et inclusif.</p>
+            <p>Tu as déjà un compte ? <a href="login.php">Se connecter</a></p>
         </aside>
         <main>
             <article>
