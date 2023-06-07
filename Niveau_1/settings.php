@@ -34,6 +34,24 @@ if (!isset($_SESSION['connected_id'])) {
                 <h3>Présentation</h3>
                 <p>Sur cette page vous trouverez les informations de l'utilisatrice
                     n° <?php echo intval($_SESSION['connected_id']) ?></p>
+                <br>
+                <hr>
+                <br>
+                <form action="followers.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
+                <input type="submit" name = 'subscribe' value="Mes followers">
+                </form>
+                <br>
+                <hr>
+                <br>
+                <form action="subscriptions.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
+                <input type="submit" name = 'subscribe' value="Mes abonnements">
+                </form>
+                <br>
+                <hr>
+                <br>
+                <form action="login.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
+                <input type="submit" name = 'subscribe' value="Me déconnecter">
+                </form>
 
             </section>
         </aside>

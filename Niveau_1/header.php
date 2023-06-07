@@ -21,14 +21,14 @@
             <?php endif; ?>
 
             <div class="mega-menu__item mega-menu__trigger">
-                <div><a href="#"> Paramètres ⬇️ </a></div>
+                <div><a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>"> Paramètres ⬇️ </a></div>
                 
                 <div class="mega-menu__content">
                     <!-- <a href="wall.php?user_id=">Mon profil</a> -->
-                    <a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Paramètres</a>
+                    <!-- <a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Paramètres</a>
                     <a href="followers.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Followers</a>
                     <a href="subscriptions.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Abonnements</a>
-                    <a href="login.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Déconnexion</a>
+                    <a href="login.php?user_id=<?php echo $_SESSION['connected_id']; ?>">Déconnexion</a> -->
                 </div>
             </div>
         </nav>
