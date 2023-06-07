@@ -28,27 +28,17 @@ if (!isset($_SESSION['connected_id'])) {
 
 
         <aside>
-            <div class="initial-avatar">...</div>
-            <!-- <img src="user.jpg" alt="Portrait de l'utilisatrice"/> -->
+            <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
             <section>
-                <h3>Présentation</h3>
-                <p>Sur cette page vous trouverez les informations de l'utilisatrice
-                    n° <?php echo intval($_SESSION['connected_id']) ?></p>
-                <br>
-                <hr>
+                <h3>Mes paramètres</h3>
+                <p>Sur cette page vous trouverez toutes vos informations personnelles - que nous ne vendons pas au plus offrant comme Facebook.</p>
                 <br>
                 <form action="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
                 <input class="button_settings"class="button_settings" type="submit" name = 'followers' value="Mes followers">
                 </form>
-                <br>
-                <hr>
-                <br>
                 <form action="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
                 <input class="button_settings" type="submit" name = 'subscribe' value="Mes abonnements">
                 </form>
-                <br>
-                <hr>
-                <br>
                 <form action="login.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
                 <input class="button_settings" type="submit" name = 'disconnect' value="Me déconnecter">
                 </form>

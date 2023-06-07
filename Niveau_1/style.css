@@ -1,6 +1,3 @@
-/* Responsive */
-@media screen and (max-width: 1500px) {}
-
 body {
     background-color: rgb(99, 2, 106);
     background-image: url('onlyClouds.png');
@@ -12,7 +9,8 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(181, 9, 194);
+    color: rgb(93 24 234);
+    ;
 }
 
 a:hover {
@@ -135,6 +133,14 @@ body>header #user ul li a {
 body>header #user:hover ul {
     display: block;
 } */
+.button_settings {
+    background-color: rgb(254 102 195);
+    border-radius: 30px;
+    border: none;
+    font-family: helvetica;
+    padding: 15px;
+    font-size: 15px;
+}
 
 #wrapper {
     display: flex;
@@ -270,22 +276,6 @@ body>header #user:hover ul {
 .contacts article img {
     float: right;
     height: 5em;
-}
-
-.initial-avatar {
-    /* Center the content */
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
-    /* Colors */
-    background-color: #d1d5db;
-    color: #fff;
-
-    /* Rounded border */
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
 }
 
 pre {
