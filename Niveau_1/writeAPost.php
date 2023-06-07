@@ -62,7 +62,9 @@
 
         <dl>
             <dt><label for='message'>Message</label></dt>
+            <br>
             <dd><textarea name='message'></textarea></dd>
+            <br>
             <dt><label for='tags'>Les mots clés # : </label></dt>
             <dd>
                 <select name="tags">
@@ -80,7 +82,7 @@
 
     <style>
     form {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     label {
@@ -89,7 +91,7 @@
 
     textarea {
         width: 100%;
-        height: 100px;
+        height: 200px;
     }
 
     select {
@@ -97,7 +99,7 @@
     }
 
     input[type="submit"] {
-        background-color: #4CAF50;
+        background-color: rgb(99, 2, 106);
         color: white;
         padding: 10px 20px;
         border: none;
@@ -105,7 +107,7 @@
     }
 
     input[type="submit"]:hover {
-        background-color: #45a049;
+        background-color: rgb(99, 2, 106);
     }
     </style>
 </article>
