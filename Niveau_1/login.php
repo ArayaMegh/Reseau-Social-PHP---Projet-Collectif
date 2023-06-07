@@ -19,7 +19,7 @@ session_start();
             <h2>Hello ! 👋 </h2>
             <p>Bienvenue sur My Safe Place, ton réseau social bienveillant et inclusif.</p>
         </aside>
-        <main>
+        <main class="debord_gauche">
             <article>
                 <h2>Connexion</h2>
                 <?php

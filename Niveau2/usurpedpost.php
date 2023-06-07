@@ -36,7 +36,7 @@ session_start();
                 <p>Sur cette page on peut poster un message en se faisant 
                     passer pour quelqu'un d'autre</p>
             </aside>
-            <main>
+            <main class="debord_gauche">
                 <article>
                     <h2>Poster un message</h2>
                     <?php
