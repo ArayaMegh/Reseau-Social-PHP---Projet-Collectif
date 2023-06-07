@@ -24,8 +24,8 @@ if (!isset($_SESSION['connected_id'])) {
             <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
             <section>
                 <h3>Présentation</h3>
-                <p>Sur cette page vous trouverez les derniers messages de
-                    toutes les utilisatrices du site.</p>
+                <p>Bienvenue !</p>
+                <p>Ici, c'est tes 'Safe News', tu trouveras tous les messages de toutes les personnes du site !</p>
             </section>
         </aside>
         <main class="debord_gauche">

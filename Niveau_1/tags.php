@@ -76,8 +76,7 @@ session_start();
 
             <section>
     <h3>Mes Safes Keys #</h3>
-    <p>Sur cette page, vous trouverez les derniers messages comportant le mot-clé <strong><?php echo $tag["label"] ?></strong>
-        (n° <?php echo $tag["id"] ?>)</p>
+    <p>Sur cette page, vous trouverez les derniers messages comportant le mot-clé <strong><?php echo $tag["label"] ?></strong></p>
 </section>
 
         <?php endif; ?>
