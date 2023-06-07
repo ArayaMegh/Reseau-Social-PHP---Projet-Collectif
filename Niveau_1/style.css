@@ -3,9 +3,9 @@
 
 body {
     background-color: rgb(99, 2, 106);
-    /* background-image: url('background.png'); */
+    background-image: url('onlyClouds.png');
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: Arial;
 }
 
@@ -38,8 +38,9 @@ a:hover {
     flex-direction: column;
     justify-content: flex-end;
     height: 245px;
-    width: 1500px;
-    background: url(backgroundAlt.png) center center / cover no-repeat;
+    background-color: white;
+    width: 1300px;
+    /* background: url(backgroundAlt.png) center center / cover no-repeat; */
 }
 
 /* menu */
@@ -53,46 +54,11 @@ a:hover {
 
 }
 
-.mega-menu__trigger:hover .mega-menu__content {
-    /* Show the mega menu when hovering the trigger item */
-    display: flex;
-    /* Modifier "block" en "flex" */
-    flex-direction: column;
-    /* Ajouter cette ligne */
-    align-items: flex-end;
-    /* Ajouter cette ligne */
-    position: absolute;
-    right: 0;
-    top: 100%;
-    z-index: 9999;
-}
-
 .mega-menu__item {
     margin-left: 10px;
     background-color: rgba(255, 255, 255, 0.46);
     border-radius: 30px;
     padding: 15px;
-}
-
-.mega-menu__content {
-    /* Border */
-    border: 1px solid #d1d5db;
-    margin-top: -1px;
-
-    /* Hidden by default */
-    display: none;
-
-    /* Absolute position */
-    left: 0px;
-    position: absolute;
-    top: 100%;
-
-    /* Take full width */
-    width: 100%;
-
-    /* Displayed on top of other elements */
-    background: #fff;
-    z-index: 9999;
 }
 
 /* body>header {
@@ -105,10 +71,10 @@ a:hover {
 
 } */
 
-/* body>header img {
+body>header img {
     height: 5em;
     border-radius: 10px;
-} */
+}
 
 /* body>header #menu {
     display: flex;

@@ -23,7 +23,7 @@ session_start();
                     <h3>Présentation</h3>
                     <p>Sur cette page vous trouverez la liste des personnes dont
                         l'utilisatrice
-                        n° <?php echo intval($_GET['user_id']) ?>
+                        n° <?php echo intval($_SESSION['connected_id']) ?>
                         suit les messages
                     </p>
 
@@ -32,7 +32,7 @@ session_start();
             <main class='contacts'>
                 <?php
                 // Etape 1: récupérer l'id de l'utilisateur
-                $userId = intval($_GET['user_id']);
+                $userId = intval($_SESSION['connected_id']);
                 // Etape 2: se connecter à la base de donnée
                 include("BDconnection.php");
                 // Etape 3: récupérer le nom de l'utilisateur
