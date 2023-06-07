@@ -5,6 +5,7 @@
 
 $laQuestionEnSql = "
                     SELECT posts.content,
+                    posts.id,
                     posts.created,
                     users.alias as author_name, 
                     users.id as author_id,

@@ -10,10 +10,52 @@
     <!-- <p></p> -->
     </div>                                            
     <footer>
-       <!--  <small>♥<?php echo $post["like_number"]?><?php include "like.php" ?></small>  -->
-        <a href="tags.php?id=<?php echo $post["tagId"]; ?>"><?php echo "#" .$post['taglist'];?></a>
+    <small>♥<?php echo $post["like_number"]?> 
+    <?php 
+        $currentPost = $post["id"];
+        if($_POST["post_id"] == $currentPost && isset($_POST['like'])) {
+            $sqlQueryLikes = "INSERT INTO likes (user_id, post_id) VALUES ('$userId', '$currentPost');";
+            $sqlLikesResult = $mysqli->query($sqlQueryLikes);
+
+            if (! $sqlLikesResult){
+                echo("Echec");
+            }else{
+                header("Refresh:0");
+            }
+        }
+
+        if($_POST["post_id"] == $currentPost && isset($_POST['dislike'])) {
+            $sqlQueryDislikes = "DELETE FROM likes WHERE user_id = '$userId' AND post_id = '$currentPost';";
+            $sqlDislikesResult = $mysqli->query($sqlQueryDislikes);
+
+            if (! $sqlDislikesResult){
+                echo("Echec");
+            }else{
+                header("Refresh:0");
+            }
+        }
+    ?>
+    <form method="post" style="display: inline;">
+        <input type="hidden" name="post_id" value="<?php echo $post["id"]; ?>"/>
+        <?php
+        $sqlQueryDidLike = "SELECT COUNT(*) FROM likes WHERE post_id = '$currentPost' AND user_id = '$userId';";
+        $sqlQueryDidLikeResult = $mysqli->query($sqlQueryDidLike);
+        $row = $sqlQueryDidLikeResult->fetch_row();
+        $hasLikedPost = $row[0] >= 1;
+
+        if ($hasLikedPost) {
+            echo "<button type='submit' name='dislike'>Not Safe</button>";
+        } else {
+            echo "<button type='submit' name='like'>Safe</button>";
+        }
+        ?>
+    </form>
+    </small>
+    <a href="tags.php?id=<?php echo $post["tagId"]; ?>"><?php echo "#" .$post['taglist'];?></a>
 
         <!-- <a href="">#piscitur</a>, -->
+        
+
     </footer>
     </article>
 

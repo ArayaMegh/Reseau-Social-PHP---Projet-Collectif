@@ -47,8 +47,8 @@ session_start();
                 <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
                 <section>
                     <h3>Présentation</h3>
-                    <p>Bienvenue sur ta 'Safe Place' <?php echo $user['alias'] ?> !</p>
-                    <p>Ici, tu peux poster ton mood et tes envies, dans la bienveillance !</p>
+                    <p>Bienvenue sur votre 'Safe Place' <?php echo $user['alias'] ?> !</p>
+                    <p>Ici, vous pouvez poster votre mood et vos envies, dans la bienveillance.</p>
                 
                 <?php if ($userId == $_SESSION['connected_id']) {
                 include("WriteAPost.php"); 
@@ -80,7 +80,7 @@ session_start();
                  * Etape 3: récupérer tous les messages de l'utilisatrice
                  */
                 $laQuestionEnSql = "
-                    SELECT posts.content, posts.created, users.alias as author_name, 
+                    SELECT posts.id, posts.content, posts.created, users.alias as author_name, 
                     users.id as author_id,
                     COUNT(likes.id) as like_number, GROUP_CONCAT(DISTINCT tags.label) AS taglist, GROUP_CONCAT(DISTINCT tags.id) AS tagId
                     FROM posts
