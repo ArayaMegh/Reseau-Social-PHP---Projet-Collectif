@@ -3,9 +3,9 @@
 
 body {
     background-color: rgb(99, 2, 106);
-    /* background-image: url('background.png'); */
+    background-image: url('onlyClouds.png');
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: Arial;
 }
 
@@ -39,7 +39,7 @@ a:hover {
     justify-content: flex-end;
     height: 245px;
     width: 1500px;
-    background: url(backgroundAlt.png) center center / cover no-repeat;
+    /* background: url(backgroundAlt.png) center center / cover no-repeat; */
 }
 
 /* menu */
