@@ -19,7 +19,19 @@ if (!isset($_SESSION['connected_id'])) {
     <meta name="author" content="Julien Falconnet">
     <link rel="stylesheet" href="style.css" />
     <div id="wrapper">
+        <?php include("BDconnection.php");?>
         <aside>
+        <?php
+            $userId = intval($_SESSION['connected_id']);
+            /**
+             * Etape 3: récupérer le nom de l'utilisateur
+             */
+            $laQuestionEnSql = "SELECT * FROM `users` WHERE id= '$userId' ";
+            $lesInformations = $mysqli->query($laQuestionEnSql);
+            $user = $lesInformations->fetch_assoc();
+            //@todo: afficher le résultat de la ligne ci dessous, remplacer XXX par l'alias et effacer la ligne ci-dessous
+            //echo "<pre>" . print_r($user, 1) . "</pre>";
+            ?>
             <!-- <div class="initial-avatar">...</div> -->
             <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
             <section>
@@ -31,7 +43,7 @@ if (!isset($_SESSION['connected_id'])) {
         <main class="debord_gauche">
             <?php
             // Etape 1: Ouvrir une connexion avec la base de donnée.
-            include("BDconnection.php");
+            
             //verificationS
             if ($mysqli->connect_errno) {
                 echo "<article>";
@@ -43,7 +55,7 @@ if (!isset($_SESSION['connected_id'])) {
             // On affiche les 5 derniers posts
             // Etape 2: Poser une question à la base de donnée et récupérer ses informations
             $laQuestionEnSql = "
-    SELECT posts.content,
+    SELECT posts.id, posts.content,
     users.id as author_id,
     posts.created,
     users.alias as author_name,  
