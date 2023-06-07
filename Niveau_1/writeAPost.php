@@ -77,4 +77,35 @@
         </dl>
         <input type='submit'>
     </form>
+
+    <style>
+    form {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    textarea {
+        width: 100%;
+        height: 100px;
+    }
+
+    select {
+        width: 200px;
+    }
+
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    </style>
 </article>
