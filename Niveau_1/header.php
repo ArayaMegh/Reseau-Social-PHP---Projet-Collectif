@@ -1,7 +1,9 @@
 
 <header>
     <div class="background">
-    <img src="logo.png" alt="Logo de notre réseau social"/>
+        <div class="logoHeader">
+            <a href="wall.php?user_id=<?php echo $_SESSION['connected_id']; ?>"><img src="logo.png" alt="Logo de notre réseau social"/></a>
+        </div>
         <nav class="mega-menu">
             <div class="mega-menu__item">
                 <a href="news.php">MySafeNews</a>

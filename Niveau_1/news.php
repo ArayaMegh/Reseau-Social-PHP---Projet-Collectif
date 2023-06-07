@@ -23,9 +23,9 @@ if (!isset($_SESSION['connected_id'])) {
             <!-- <div class="initial-avatar">...</div> -->
             <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
             <section>
-                <h3>Présentation</h3>
-                <p>Bienvenue !</p>
-                <p>Ici, c'est tes 'Safe News', tu trouveras tous les messages de toutes les personnes du site !</p>
+                <h3>Bienvenue chez toi ! 👋</h3>
+                <p>C'est ici que tu retrouveras les Safes News"</p>
+                <p>Cette page présente tous les messages de tout.e.s les utilisateurs.rices du site.</p>
             </section>
         </aside>
         <main class="debord_gauche">

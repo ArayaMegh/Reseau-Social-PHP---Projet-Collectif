@@ -53,9 +53,9 @@ if (!isset($_SESSION['connected_id'])) {
             <!-- <div class="initial-avatar">...</div> -->
             <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
             <section>
-                <h3>Présentation</h3>
-                <p>Bienvenue sur ta 'Safe Commu' <?php echo $user['alias'] ?> !</p>
-                <p>Ici, tu trouveras le mood et les envies des personnes que tu follow !</p>
+                <h3>🌸 Ta safe commu 🌸</h3>
+                <p><?php echo $user['alias'] ?>, ici tu n'es qu'entre ami.e.s !</p>
+                <p>C'est sur cette page que tu retrouves les posts des personnes que tu suis.</p>
             </section>
         </aside>
         <main class="debord_gauche">

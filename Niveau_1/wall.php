@@ -46,9 +46,9 @@ session_start();
                 ?>
                 <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
                 <section>
-                    <h3>Présentation</h3>
-                    <p>Bienvenue sur ta 'Safe Place' <?php echo $user['alias'] ?> !</p>
-                    <p>Ici, tu peux poster ton mood et tes envies, dans la bienveillance !</p>
+                    <h3>✨ Ta safe place ✨</h3>
+                    <p>Ici, c'est chez toi <?php echo $user['alias'] ?> !</p>
+                    <p>Sur cette page, tu peux poster ton mood et tes envies, dans la bienveillance et le partager à ta communauté !</p>
                 
                 <?php if ($userId == $_SESSION['connected_id']) {
                 include("WriteAPost.php"); 

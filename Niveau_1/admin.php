@@ -50,16 +50,17 @@ session_start();
                     // echo "<pre>" . print_r($tag, 1) . "</pre>";
                     // ?>
                     <article>
-                        <h3><?php echo "#" .$tag['label'] ?></h3>
-                        <p><?php echo "Identifiant : " .$tag['id'] ?></p>
-                        <nav>
-                        <a href="tags.php?id=<?php echo $tag['id']; ?>">Messages</a>
+                        <p><b><?php echo "Tag : " .$tag['label'] ?></b></p>
+                        <br>
+                        <p><?php echo "#" .$tag['id'] ?></p>
+                        <nav><br>
+                        <a href="tags.php?id=<?php echo $tag['id']; ?>">Voir les posts associés</a>
                         </nav>
                     </article>
                 <?php } ?>
             </aside>
             <main class="debord_gauche">
-                <h2>Utilisatrices</h2>
+                <h2>Nos safe members</h2>
                 <?php
                 /*
                  * Etape 4 : trouver tous les mots clés
@@ -83,14 +84,15 @@ session_start();
                     // echo "<pre>" . print_r($tag, 1) . "</pre>";
                     ?>
                     <article>
-                        <h3><?php echo $tag['alias'] ?></h3>
+                        <h3><b>Pseudo : <?php echo $tag['alias'] ?></b></h3>
                         <p><?php echo "Identifiant : " .$tag['id'] ?></p>
                         <nav>
+                            <br></br>
                             <a href="wall.php?user_id=<?php echo $tag['id']; ?>">Mur</a>
                             | <a href="feed.php?user_id=<?php echo $tag['id']; ?>">Flux</a>
                             | <a href="settings.php?user_id=<?php echo $tag['id']; ?>">Paramètres</a>
                             | <a href="followers.php?user_id=<?php echo $tag['id']; ?>">Suiveurs</a>
-                            | <a href="subscriptions.php?user_id=<?php echo $tag['id']; ?>">>Abonnements</a>
+                            | <a href="subscriptions.php?user_id=<?php echo $tag['id']; ?>">Abonnements</a>
                         </nav>
                     </article>
                 <?php } ?>
