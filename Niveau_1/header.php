@@ -23,7 +23,9 @@
             </div>
             <?php endif; ?>
 
-
+            <div class="mega-menu__item">
+                <div><a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>"> Paramètres</a></div>
+            </div>
         </nav>
     </div>
 </header>

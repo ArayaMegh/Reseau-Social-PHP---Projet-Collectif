@@ -37,20 +37,20 @@ if (!isset($_SESSION['connected_id'])) {
                 <br>
                 <hr>
                 <br>
-                <form action="followers.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
-                <input type="submit" name = 'subscribe' value="Mes followers">
+                <form action="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
+                <input type="submit" name = 'followers' value="Mes followers">
                 </form>
                 <br>
                 <hr>
                 <br>
-                <form action="subscriptions.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
+                <form action="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
                 <input type="submit" name = 'subscribe' value="Mes abonnements">
                 </form>
                 <br>
                 <hr>
                 <br>
                 <form action="login.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
-                <input type="submit" name = 'subscribe' value="Me déconnecter">
+                <input type="submit" name = 'disconnect' value="Me déconnecter">
                 </form>
 
             </section>
@@ -112,6 +112,73 @@ if (!isset($_SESSION['connected_id'])) {
                     <dd><?php echo $user['totalrecieved'] ?></dd>
                 </dl>
             </article>
+
+            <main class='contacts'>
+
+            <!-- Si on appuie sur le bouton Mes followers -->
+            <?php if(isset($_POST['followers'])){
+ 
+            // Etape 1: récupérer l'id de l'utilisateur
+            $userId = intval($_SESSION['connected_id']);
+            // Etape 2: se connecter à la base de donnée
+            include("BDconnection.php");
+            // Etape 3: récupérer le nom de l'utilisateur
+            $laQuestionEnSql = "
+                    SELECT users.*
+                    FROM followers
+                    LEFT JOIN users ON users.id=followers.following_user_id
+                    WHERE followers.followed_user_id='$userId'
+                    GROUP BY users.id
+                    ";
+            $lesInformations = $mysqli->query($laQuestionEnSql);
+            // Etape 4: à vous de jouer
+            //@todo: faire la boucle while de parcours des abonnés et mettre les bonnes valeurs ci dessous 
+
+            while ($userId = $lesInformations->fetch_assoc()) { ?>
+                <article class='contacts'>
+                    <img src="user.jpg" alt="blason" />
+                    <h3><?php echo $userId["alias"] ?></h3>
+                    <p><?php echo $userId["id"] ?></p>
+                </article>
+            <?php
+            } ?>
+            <?php
+            }
+            ?>
+
+            <!-- Si on appuie sur le boutton mes abonnements -->
+            <?php if(isset($_POST['subscribe'])){
+                // Etape 1: récupérer l'id de l'utilisateur
+                $userId = intval($_SESSION['connected_id']);
+                // Etape 2: se connecter à la base de donnée
+                include("BDconnection.php");
+                // Etape 3: récupérer le nom de l'utilisateur
+                $laQuestionEnSql = "
+                    SELECT users.* 
+                    FROM followers 
+                    LEFT JOIN users ON users.id=followers.followed_user_id 
+                    WHERE followers.following_user_id='$userId'
+                    GROUP BY users.id
+                    ";
+                $lesInformations = $mysqli->query($laQuestionEnSql);
+                
+                // Etape 4: à vous de jouer
+                //@todo: faire la boucle while de parcours des abonnés et mettre les bonnes valeurs ci dessous 
+                while ($user = $lesInformations->fetch_assoc())
+                {?>
+                    <article class='contacts'>
+                    <img src="user.jpg" alt="blason"/>
+                    <h3><?php echo $user["alias"]?></h3>
+                    <p><?php echo $user["id"]?></p>                    
+                </article>
+                <?php
+                } 
+            }?>
+        </main>
+
+            
+            
+
         </main>
     </div>
 </body>
