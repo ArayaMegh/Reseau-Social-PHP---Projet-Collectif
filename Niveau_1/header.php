@@ -3,7 +3,7 @@
     <div class="background">
         <nav class="mega-menu">
             <div class="mega-menu__item">
-                <!-- <img src="PROGRESS-PRIDE-FLAG.png" alt="Logo de notre réseau social"/> -->
+                <img src="logo.png" alt="Logo de notre réseau social"/>
                 <a href="news.php">MySafeNews</a>
             </div>
 
