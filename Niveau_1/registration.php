@@ -20,7 +20,7 @@
             <p>Bienvenue sur My Safe Place, ton réseau social bienveillant et inclusif.</p>
             <p>Tu as déjà un compte ? <a href="login.php">Se connecter</a></p>
         </aside>
-        <main>
+        <main class="debord_gauche">
             <article>
                 <h2>Inscription</h2>
                 <?php

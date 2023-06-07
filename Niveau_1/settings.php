@@ -45,7 +45,7 @@ if (!isset($_SESSION['connected_id'])) {
 
             </section>
         </aside>
-        <main>
+        <main class="debord_gauche">
             <?php
             /**
              * Etape 1: Les paramètres concernent une utilisatrice en particulier

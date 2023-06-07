@@ -142,6 +142,10 @@ body>header #user:hover ul {
     font-size: 15px;
 }
 
+.debord_gauche {
+    padding-left: 1em;
+}
+
 #wrapper {
     display: flex;
     width: 70em;
@@ -276,8 +280,4 @@ body>header #user:hover ul {
 .contacts article img {
     float: right;
     height: 5em;
-}
-
-pre {
-    color: #aaa;
 }

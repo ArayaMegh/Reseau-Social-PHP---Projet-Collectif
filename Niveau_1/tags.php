@@ -83,7 +83,7 @@ session_start();
         <?php endif; ?>
 
     </aside>
-    <main>
+    <main class="debord_gauche">
         <?php
         /**
          * Etape 3: Récupérer tous les messages avec un mot clé donné

@@ -22,6 +22,7 @@
                 <div><a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>"> Paramètres </a></div>
             </div>
             <?php endif; ?>
+
         </nav>
     </div>
 </header>
