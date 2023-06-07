@@ -60,7 +60,7 @@ if (!isset($_SESSION['connected_id'])) {
                 </p>
             </section>
         </aside>
-        <main>
+        <main class="debord_gauche">
             <?php
             include("mainSQLrequest.php");
             ?>

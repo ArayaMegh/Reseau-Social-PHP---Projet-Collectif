@@ -135,6 +135,9 @@ body>header #user ul li a {
 body>header #user:hover ul {
     display: block;
 } */
+.debord_gauche{
+    padding-left:1em;
+}
 
 #wrapper {
     display: flex;
@@ -159,9 +162,9 @@ body>header #user:hover ul {
 
 #wrapper main {
     flex: 3;
-    padding-left: 1em;
-    height: 80vh;
-    overflow-y: scroll;
+    /* padding-left: 1em; */
+    /* height: 80vh;
+    overflow-y: scroll; */
 }
 
 #wrapper main article {
@@ -243,6 +246,9 @@ body>header #user:hover ul {
     margin: 0;
 }
 
+.parameters{
+    margin-bottom: 1em;
+}
 .parameters dl dt {
     float: left;
     font-weight: bold;
@@ -255,16 +261,17 @@ body>header #user:hover ul {
 }
 
 .contacts {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1FR);
+    grid-gap: 16px;
     align-items: flex-start;
     align-content: flex-start;
 }
 
 .contacts article {
-    width: 25em;
+    /* width: 25em; */
     height: 7em;
-    margin-right: 1em;
+    /* margin-right: 1em; */
 }
 
 .contacts article img {

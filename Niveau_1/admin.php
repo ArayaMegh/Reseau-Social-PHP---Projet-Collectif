@@ -58,7 +58,7 @@ session_start();
                     </article>
                 <?php } ?>
             </aside>
-            <main>
+            <main class="debord_gauche">
                 <h2>Utilisatrices</h2>
                 <?php
                 /*

@@ -28,7 +28,7 @@ if (!isset($_SESSION['connected_id'])) {
                     toutes les utilisatrices du site.</p>
             </section>
         </aside>
-        <main>
+        <main class="debord_gauche">
             <?php
             // Etape 1: Ouvrir une connexion avec la base de donnée.
             include("BDconnection.php");

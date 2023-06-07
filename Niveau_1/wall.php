@@ -76,7 +76,7 @@ session_start();
 
                 </section>
             </aside>
-            <main>
+            <main class="debord_gauche">
                 <?php
                 /**
                  * Etape 3: récupérer tous les messages de l'utilisatrice
