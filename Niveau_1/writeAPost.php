@@ -1,9 +1,7 @@
 <article>
     <br>
-    <hr>
-    <br>
-
-    <h3>Poster un message</h3>
+    <hr size="2px" color="#fe66c3">
+    <h3>💭 Poster un message 💭</h3>
     <?php
     /**
      * BD
@@ -61,11 +59,8 @@
         <input type='hidden' name='auteur' value='<?php echo $_SESSION["connected_id"]; ?>'>
 
         <dl>
-            <dt><label for='message'>Message</label></dt>
+            <dd><textarea name='message' minlength="1"></textarea></dd>
             <br>
-            <dd><textarea name='message'></textarea></dd>
-            <br>
-            <dt><label for='tags'>Les mots clés # : </label></dt>
             <dd>
                 <select name="tags">
                     <?php
@@ -77,37 +72,6 @@
             </dd>
 
         </dl>
-        <input type='submit'>
+        <input type='submit' value="Je partage !" class="button_settings">
     </form>
-
-    <style>
-    form {
-        margin-bottom: 10px;
-    }
-
-    label {
-        font-weight: bold;
-    }
-
-    textarea {
-        width: 100%;
-        height: 200px;
-    }
-
-    select {
-        width: 200px;
-    }
-
-    input[type="submit"] {
-        background-color: rgb(99, 2, 106);
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-    }
-
-    input[type="submit"]:hover {
-        background-color: rgb(99, 2, 106);
-    }
-    </style>
 </article>

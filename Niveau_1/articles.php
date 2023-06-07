@@ -10,7 +10,7 @@
     <!-- <p></p> -->
     </div>                                            
     <footer>
-    <small>♥<?php echo $post["like_number"]?> 
+    <small> ⭐️ <?php echo $post["like_number"]?> 
     <?php 
         $currentPost = $post["id"];
         if($_POST["post_id"] == $currentPost && isset($_POST['like'])) {
@@ -44,9 +44,9 @@
         $hasLikedPost = $row[0] >= 1;
 
         if ($hasLikedPost) {
-            echo "<button type='submit' name='dislike'>Not Safe</button>";
+            echo "<button type='submit' name='dislike' class='button_settings_like'>Not safe</button>";
         } else {
-            echo "<button type='submit' name='like'>Safe</button>";
+            echo "<button type='submit' name='like' class='button_settings_like'>Safe</button>";
         }
         ?>
     </form>

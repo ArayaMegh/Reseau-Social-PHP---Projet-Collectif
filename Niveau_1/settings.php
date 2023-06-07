@@ -34,7 +34,7 @@ if (!isset($_SESSION['connected_id'])) {
                 <p>Sur cette page vous trouverez toutes vos informations personnelles - que nous ne vendons pas au plus offrant comme Facebook 😇.</p>
                 <br>
                 <form action="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
-                <input class="button_settings"class="button_settings" type="submit" name = 'followers' value="Mes followers">
+                <input class="button_settings" type="submit" name = 'followers' value="Mes followers">
                 </form>
                 <form action="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
                 <input class="button_settings" type="submit" name = 'subscribe' value="Mes abonnements">

@@ -72,13 +72,13 @@
                     <input type='hidden' name='id' value=''>
                     <dl>
                         <dt><label for='pseudo'>Pseudo</label></dt>
-                        <dd><input type='text' name='pseudo'></dd>
+                        <dd><input type='text' name='pseudo' class="button_log"></dd>
                         <dt><label for='email'>E-Mail</label></dt>
-                        <dd><input type='email' name='email'></dd>
+                        <dd><input type='email' name='email' class="button_log" ></dd>
                         <dt><label for='motpasse'>Mot de passe</label></dt>
-                        <dd><input type='password' name='motpasse'></dd>
+                        <dd><input type='password' name='motpasse' class="button_log" ></dd>
                     </dl>
-                    <input type='submit' value="Envoyer" />
+                    <input type='submit' value="Envoyer" class="button_settings"/>
                 </form>
             </article>
         </main>

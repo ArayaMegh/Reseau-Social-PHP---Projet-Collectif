@@ -17,6 +17,27 @@ a:hover {
     text-decoration: underline;
 }
 
+textarea {
+    border-color: rgb(254 102 195);
+    width: 246px;
+    height: 70px;
+    margin-left: -30px;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+select {
+    border-color: rgb(254 102 195);
+    width: 246px;
+    margin-left: -30px;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+hr {
+    color: #fe66c3;
+}
+
 /* background */
 .background-full {
     margin-bottom: 15px;
@@ -140,6 +161,33 @@ body>header #user:hover ul {
     font-family: helvetica;
     padding: 15px;
     font-size: 15px;
+    font-weight: 600;
+    color: white;
+}
+
+.button_settings_like {
+    background-color: rgb(254 102 195);
+    border-radius: 30px;
+    border: none;
+    font-family: helvetica;
+    padding: 10px;
+    font-size: 11px;
+    color: white;
+    margin-left: 8px;
+    opacity: 80%;
+}
+
+.button_log {
+    border-color: rgb(254 102 195);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    font-family: helvetica;
+    padding: 9px;
+    font-size: 13px;
+    height: 25px;
+    width: 222px;
+    margin: 5px;
 }
 
 .debord_gauche {
@@ -188,6 +236,8 @@ body>header #user:hover ul {
 
 #wrapper main article time {
     float: right;
+    font-size: small;
+    font-family: monospace;
 }
 
 #wrapper main article address {
@@ -203,6 +253,7 @@ body>header #user:hover ul {
 #wrapper main article footer {
     margin-top: 1em;
     text-align: right;
+    height: 45px;
 }
 
 #wrapper main article footer small {
