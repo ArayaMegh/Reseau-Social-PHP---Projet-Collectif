@@ -1,6 +1,3 @@
-/* Responsive */
-@media screen and (max-width: 1500px) {}
-
 body {
     background-color: rgb(99, 2, 106);
     background-image: url('onlyClouds.png');
@@ -12,7 +9,8 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(181, 9, 194);
+    color: rgb(93 24 234);
+    ;
 }
 
 a:hover {
@@ -135,8 +133,17 @@ body>header #user ul li a {
 body>header #user:hover ul {
     display: block;
 } */
-.debord_gauche{
-    padding-left:1em;
+.button_settings {
+    background-color: rgb(254 102 195);
+    border-radius: 30px;
+    border: none;
+    font-family: helvetica;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.debord_gauche {
+    padding-left: 1em;
 }
 
 #wrapper {
@@ -162,9 +169,7 @@ body>header #user:hover ul {
 
 #wrapper main {
     flex: 3;
-    /* padding-left: 1em; */
-    /* height: 80vh;
-    overflow-y: scroll; */
+    height: 80vh;
 }
 
 #wrapper main article {
@@ -246,9 +251,6 @@ body>header #user:hover ul {
     margin: 0;
 }
 
-.parameters{
-    margin-bottom: 1em;
-}
 .parameters dl dt {
     float: left;
     font-weight: bold;
@@ -277,24 +279,4 @@ body>header #user:hover ul {
 .contacts article img {
     float: right;
     height: 5em;
-}
-
-.initial-avatar {
-    /* Center the content */
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
-    /* Colors */
-    background-color: #d1d5db;
-    color: #fff;
-
-    /* Rounded border */
-    border-radius: 50%;
-    height: 3rem;
-    width: 3rem;
-}
-
-pre {
-    color: #aaa;
 }
