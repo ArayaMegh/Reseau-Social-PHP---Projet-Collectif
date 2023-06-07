@@ -38,19 +38,19 @@ if (!isset($_SESSION['connected_id'])) {
                 <hr>
                 <br>
                 <form action="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
-                <input type="submit" name = 'followers' value="Mes followers">
+                <input class="button_settings"class="button_settings" type="submit" name = 'followers' value="Mes followers">
                 </form>
                 <br>
                 <hr>
                 <br>
                 <form action="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
-                <input type="submit" name = 'subscribe' value="Mes abonnements">
+                <input class="button_settings" type="submit" name = 'subscribe' value="Mes abonnements">
                 </form>
                 <br>
                 <hr>
                 <br>
                 <form action="login.php?user_id=<?php echo $_SESSION['connected_id']; ?>" method="post">
-                <input type="submit" name = 'disconnect' value="Me déconnecter">
+                <input class="button_settings" type="submit" name = 'disconnect' value="Me déconnecter">
                 </form>
 
             </section>
