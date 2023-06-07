@@ -17,8 +17,8 @@ session_start();
     
         <div id="wrapper">
             <aside>
-            <div class="initial-avatar">...</div>
-                <!-- <img src="user.jpg" alt="Portrait de l'utilisatrice"/> -->
+            <!-- <div class="initial-avatar">...</div> -->
+                <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
                 <section>
                     <h3>Présentation</h3>
                     <p>Sur cette page vous trouverez la liste des personnes dont

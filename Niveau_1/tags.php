@@ -45,8 +45,8 @@ session_start();
         echo("Échec de la requête : " . $mysqli->error);
     }
     ?>
-    <div class="initial-avatar">...</div>
-    <!-- <img src="user.jpg" alt="Portrait de l'utilisatrice"/> -->
+    <!-- <div class="initial-avatar">...</div> -->
+    <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
 
     <section>
         <h3>Mots-clés</h3>
