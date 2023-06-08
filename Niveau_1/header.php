@@ -9,7 +9,6 @@
                 <a href="news.php">MySafeNews</a>
             </div> 
 
-            <?php if (isset($_SESSION['connected_id'])) : ?>
                 <!-- Menu content when the user is connected -->
                 <div class="mega-menu__item">
                     <a href="wall.php?user_id=<?php echo $_SESSION['connected_id']; ?>">MySafePlace</a>
@@ -23,7 +22,7 @@
                 <div class="mega-menu__item">
                 <div><a href="settings.php?user_id=<?php echo $_SESSION['connected_id']; ?>"> Paramètres </a></div>
             </div>
-            <?php endif; ?>
+
 
         </nav>
     </div>
