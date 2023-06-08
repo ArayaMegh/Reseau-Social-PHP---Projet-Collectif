@@ -3,7 +3,7 @@
 <br>
 
 <form action="wall.php?user_id=<?php echo $userId; ?>" method="post">
-<input type="submit" name = "unsubscribe" value="Se désabonner">
+<input type="submit" name = "unsubscribe" value="Se désabonner" class="button_settings">
 </form>
 
 <?php
