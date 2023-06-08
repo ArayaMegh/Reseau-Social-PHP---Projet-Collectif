@@ -35,9 +35,11 @@ if (!isset($_SESSION['connected_id'])) {
             <!-- <div class="initial-avatar">...</div> -->
             <img src="user.jpg" alt="Portrait de l'utilisatrice"/>
             <section>
-                <h3>Bienvenue chez toi ! 👋</h3>
-                <p>C'est ici que tu retrouveras les Safes News"</p>
-                <p>Cette page présente tous les messages de tout.e.s les utilisateurs.rices du site.</p>
+                <h3>⚡️ My safe news ⚡️</h3>
+                <p>C'est ici que tu retrouveras les safes news.</p>
+                <p>Tu y trouveras les messages de tout.e.s les utilisateurs.rices de notre réseau social. </p>
+                <p>Bienveillance et respect sont nos maîtres-mots ! 🌈 </p>
+                <p>Inspire-toi, réagis et partage tes idées à la commu !</p>
             </section>
         </aside>
         <main class="debord_gauche">
