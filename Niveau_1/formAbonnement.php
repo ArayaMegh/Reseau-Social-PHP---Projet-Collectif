@@ -3,7 +3,7 @@
 <br>
 
 <form action="wall.php?user_id=<?php echo $userId; ?>" method="post">
-<input type="submit" name = 'subscribe' value="S'abonner">
+<input type="submit" name = 'subscribe' value="S'abonner" class="button_settings">
 </form>
 
 <?php 
