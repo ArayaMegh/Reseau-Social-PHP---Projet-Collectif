@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(99, 2, 106);
+    background-color: rgb(255, 255, 255);
     background-image: url('onlyClouds.png');
     background-size: contain;
     background-repeat: repeat;
@@ -58,6 +58,7 @@ hr {
     justify-content: flex-end;
     height: 200px;
     background-color: #ffffff7d;
+    border-radius: 30px;
     width: 1300px;
     /* background: url(backgroundAlt.png) center center / cover no-repeat; */
 }
