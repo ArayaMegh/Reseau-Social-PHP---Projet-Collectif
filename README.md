@@ -1,31 +1,47 @@
-Pour accéder à la base de donnée :
-Se rendre sur le fichier BDconnection.php et s'assurer d'avoir,
 
-pour nos ami-es sur MAMP :
-$mysqli = new mysqli("localhost", "root", "root", "socialnetwork");
+# My Safe Place - Réseau Social
 
-pour nos ami-es sur XAMPP :
-$mysqli = new mysqli("localhost", "root", "", "socialnetwork");?>
+Réseau social "safe", féministe, où tout le monde se sente bien.
 
 
-Réseau Social PHP en projet collectif.
+## Créateurices
 
-Le but de cet exercice est de créer un réseau social en PHP en équipe constistuée de 4 personnes, de comprendre comment fonctionne le PHP, les bases de données et les manipuler. 
+- [@ArayaMegh](https://www.github.com/ArayaMegh)
+- [@elsacatoire](https://www.github.com/elsacatoire)
+- [@MarionLpz](https://www.github.com/MarionLpz)
+- [@Oumaimalam1](https://www.github.com/Oumaimalam1)
 
-Le projet a plusieurs niveaux de complexités, avec du code "à trous".
 
-Nous avons décidé de faire un réseau social "safe", féministe et où tout le monde se sente bien !
+## Tech Stack
 
-Je vous laisse découvrir : My Safe Place !
+**Front:** CSS, Javascript.
 
-Combien de temps : 
+**Server:** MySQL, MAMP/XAMPP, PHP.
 
-En 2 semaines.
 
-Quels langages :
+## FAQ
 
-PHP, JavaScript
+#### Combien de temps ? 
 
-Quels outils : 
+2 Semaines
 
-XAMPP ou MAMP
+#### Difficultés rencontrées ? 
+
+Organisation, code à "trous", première rencontre avec le PHP, XAMPP/MAMP et MySQL. 
+
+## Screen
+
+![MySafePLace - Connexion](https://github.com/ArayaMegh/Reseau-Social-PHP---Projet-Collectif/assets/123969080/39180329-5cb2-41a7-86aa-4842b1143ae2)
+
+
+![MySafePLace - login](https://github.com/ArayaMegh/Reseau-Social-PHP---Projet-Collectif/assets/123969080/36d67eb8-6567-43c7-96b7-cd5a96de882a)
+
+![MySafePlace - News](https://github.com/ArayaMegh/Reseau-Social-PHP---Projet-Collectif/assets/123969080/42beb84f-19e5-4923-98c3-72256b9dbb22)
+
+![MySafePlace - Wall](https://github.com/ArayaMegh/Reseau-Social-PHP---Projet-Collectif/assets/123969080/d1a0ecba-6037-4148-a5a9-997c435d73b1)
+
+![MySafePlace - Commu](https://github.com/ArayaMegh/Reseau-Social-PHP---Projet-Collectif/assets/123969080/3398465e-2775-4758-9fda-1da566bc6ab4)
+
+![MySafePlace - Paramètres](https://github.com/ArayaMegh/Reseau-Social-PHP---Projet-Collectif/assets/123969080/01688761-2d9d-43c0-9db1-2ee9b165ba6a)
+
+![MySafePlace - Tags](https://github.com/ArayaMegh/Reseau-Social-PHP---Projet-Collectif/assets/123969080/e5961c4f-6a86-4a5a-8f88-1d4ff15cf039)
