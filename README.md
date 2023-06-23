@@ -17,3 +17,15 @@ Le projet a plusieurs niveaux de complexités, avec du code "à trous".
 Nous avons décidé de faire un réseau social "safe", féministe et où tout le monde se sente bien !
 
 Je vous laisse découvrir : My Safe Place !
+
+Combien de temps : 
+
+En 2 semaines.
+
+Quels langages :
+
+PHP, JavaScript
+
+Quels outils : 
+
+XAMPP ou MAMP
