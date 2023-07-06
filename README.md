@@ -6,10 +6,10 @@ Réseau social "safe", féministe, où tout le monde se sente bien.
 
 ## Créateurices
 
-- [@ArayaMegh](https://www.github.com/ArayaMegh)
-- [@elsacatoire](https://www.github.com/elsacatoire)
-- [@MarionLpz](https://www.github.com/MarionLpz)
-- [@Oumaimalam1](https://www.github.com/Oumaimalam1)
+- [@Meghan](https://www.github.com/ArayaMegh)
+- [@Elsa](https://www.github.com/elsacatoire)
+- [@Marion](https://www.github.com/MarionLpz)
+- [@Oumaima](https://www.github.com/Oumaimalam1)
 
 
 ## Tech Stack
