@@ -1,7 +1,17 @@
 
 # My Safe Place - Réseau Social
 
+Juin 2023, 5e mois de formation.
+
+Equipe de 4 en situation réelle.
+
 Réseau social "safe", féministe, où tout le monde se sente bien.
+
+"Le réseau social proposé (inspiré de Twitter ou Facebook) affichera les messages des utilisateurs sur différentes pages (les derniers messages, ceux d’un utilisateur en particulier, ceux des utilisateurs suivis, et ceux associés à un mot-clé particulier).
+
+Au niveau technique, le PHP servira à aller chercher des informations dans la base de donnée et à les incorporer dans du HTML pour produire une page complète. 
+
+Pour vous mettre le pied à l’étrier, une bonne partie du HTML, des CSS, et des requêtes SQL à la base de données sont déjà fournies. Il s’agit essentiellement d’un texte à trou de difficulté progressive."
 
 
 ## Créateurices
@@ -14,21 +24,33 @@ Réseau social "safe", féministe, où tout le monde se sente bien.
 
 ## Tech Stack
 
-**Front:** CSS, Javascript.
+**Front:** CSS, HTML, Javascript.
 
 **Server:** MySQL, MAMP/XAMPP, PHP.
 
 
-## FAQ
+## Contraintes
 
-#### Combien de temps ? 
+Le projet est pensé pour être réalisé en deux semaines.
 
-2 Semaines
+Le contexte technique imposé est : 
 
-#### Difficultés rencontrées ? 
+- PHP / Mysql (ou Mariadb) / Apache (via un installateur MAMP, WAMP ou XAMPP selon les configurations individuelles).
+- Ainsi que HTML/CSS pour les affichages.
 
-Organisation, code à "trous", première rencontre avec le PHP, XAMPP/MAMP et MySQL. 
+### Objectifs 
 
+Les compétences mises en œuvre dans ce projet sont:
+
+- la compréhension des échanges entre client et serveur et la configuration minimale d’un serveur Apache/PHP/MySql (type XAMPP, MAMP, LAMP etc)
+- la génération de code HTML à partir d’un langage de programmation (PHP)
+- l’usage de paramètres GET
+- le traitement de formulaires HTML en PHP
+- la gestion du processus d’inscription/authentification
+- les requêtes et interactions avec une base de donnée (mariadb/mysql)
+- mise en page du HTML par des CSS.
+
+  
 ## Screen
 
 ![MySafePLace - Connexion](https://github.com/ArayaMegh/Reseau-Social-PHP---Projet-Collectif/assets/123969080/39180329-5cb2-41a7-86aa-4842b1143ae2)
